@@ -1,0 +1,2131 @@
+{
+  "template_name": "Reporte Patológico Mama - R2BO + CAP Unified",
+  "version": "9.0",
+  "children": [
+    {
+      "id": 1,
+      "name": "Metadatos del Informe",
+      "type": "section",
+      "fields": [
+        {
+          "id": 101,
+          "name": "Fecha del informe",
+          "type": "date",
+          "description": "Fecha de EMISIÓN del informe o documento (validación / firma). NO es la fecha de recepción, de toma de muestra ni de nacimiento."
+        },
+        {
+          "id": 102,
+          "name": "ID Solicitud Origen",
+          "type": "text",
+          "description": "Número de una solicitud o biopsia de ORIGEN o PREVIA citada en el texto (no el número de este informe)."
+        },
+        {
+          "id": 103,
+          "name": "RUT Paciente",
+          "type": "text",
+          "description": "RUT de la paciente: sólo el número con su dígito verificador, sin la palabra RUT."
+        },
+        {
+          "id": 104,
+          "name": "RUT Patólogo",
+          "type": "text",
+          "description": "RUT del médico patólogo que firma: sólo el número con su dígito verificador."
+        },
+        {
+          "id": 105,
+          "name": "Institución de origen (DEIS)",
+          "type": "coded",
+          "description": "Nombre del establecimiento de salud que emite el informe, tal como aparece escrito."
+        },
+        {
+          "id": 106,
+          "name": "Número de Biopsia",
+          "type": "text",
+          "description": "Número de biopsia de ESTE informe (p. ej. el que sigue a \"BIOPSIA N°\")."
+        },
+        {
+          "id": 107,
+          "name": "Ficha",
+          "type": "text",
+          "description": "Número de ficha clínica de la paciente."
+        },
+        {
+          "id": 108,
+          "name": "Registro Clínico ID",
+          "type": "text",
+          "description": "Número del \"Registro Clínico ID\"."
+        },
+        {
+          "id": 109,
+          "name": "Nombre Paciente",
+          "type": "text",
+          "description": "Nombre de la paciente."
+        },
+        {
+          "id": 110,
+          "name": "Nombre Patólogo",
+          "type": "text",
+          "description": "Nombre del médico patólogo que firma el informe."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Espécimen",
+      "type": "section",
+      "fields": [
+        {
+          "id": 201,
+          "name": "Procedimiento",
+          "type": "coded",
+          "options": [
+            "Excisión (menor a mastectomía total)",
+            "Mastectomía total",
+            "Biopsia aguja gruesa (core)",
+            "Biopsia por aspiración con aguja fina (PAAF)",
+            "Biopsia de piel (losange/punch) de la mama",
+            "Otro (especificar)",
+            "No especificado"
+          ],
+          "children": [
+            {
+              "id": 20101,
+              "name": "Especificar otro procedimiento",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Lateralidad del Espécimen",
+          "type": "coded",
+          "options": [
+            "Derecha",
+            "Izquierda",
+            "Bilateral",
+            "No especificada"
+          ]
+        },
+        {
+          "id": 203,
+          "name": "Sitio Tumoral (Localización Anatómica)",
+          "type": "group",
+          "children": [
+            {
+              "id": 20301,
+              "name": "Cuadrante",
+              "type": "coded_multiple",
+              "options": [
+                "Cuadrante superior externo",
+                "Cuadrante superior interno",
+                "Cuadrante inferior externo",
+                "Cuadrante inferior interno",
+                "Central",
+                "Pezón",
+                "Prolongación axilar (Cola de Spence)",
+                "Lesión solapada / Línea media",
+                "Mama, no especificada (SAI)",
+                "Otro",
+                "No especificada"
+              ]
+            },
+            {
+              "id": 20302,
+              "name": "Posición Reloj",
+              "type": "coded_multiple",
+              "options": [
+                "12:00",
+                "1:00",
+                "2:00",
+                "3:00",
+                "4:00",
+                "5:00",
+                "6:00",
+                "7:00",
+                "8:00",
+                "9:00",
+                "10:00",
+                "11:00",
+                "No especificada"
+              ]
+            },
+            {
+              "id": 20303,
+              "name": "Distancia al pezón (cm)",
+              "type": "number",
+              "unit": "cm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hallazgos Invasivos",
+      "type": "section",
+      "fields": [
+        {
+          "id": 301,
+          "name": "Tipo Histológico",
+          "type": "coded",
+          "options": [
+            "Sin carcinoma invasivo residual",
+            "Carcinoma invasivo de tipo no especial (ductal)",
+            "Carcinoma invasivo de tipo no especial (ductal) con patrón morfológico específico",
+            "Carcinoma lobulillar invasivo, clásico",
+            "Carcinoma lobulillar invasivo, patrón variante",
+            "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+            "Carcinoma tubular",
+            "Carcinoma cribriforme invasivo",
+            "Carcinoma mucinoso",
+            "Carcinoma micropapilar invasivo",
+            "Carcinoma apocrino invasivo",
+            "Carcinoma metaplásico, célula fusiforme",
+            "Carcinoma metaplásico con diferenciación heteróloga / producción de matriz",
+            "Carcinoma metaplásico de células escamosas",
+            "Carcinoma metaplásico mixto (especificar tipos y procentajes de cada uno)",
+            "Carcinoma metaplásico, tipo favorable, adenoescamoso de bajo grado",
+            "Carcinoma metaplásico, tipo favorable, de bajo grado similar a la fibromatosis",
+            "Carcinoma metaplásico, otro tipo (especificar)",
+            "Carcinoma papilar sólido con invasión",
+            "Carcinoma secretor",
+            "Carcinoma adenoideo quístico",
+            "Carcinoma microinvasivo",
+            "Carcinoma invasivo con características mixtas ductales y lobulillares",
+            "Carcinoma invasivo con características de (especificar)",
+            "Carcinoma metaplásico",
+            "Carcinoma papilar encapsulado con invasión",
+            "Adenocarcinoma papilar intraductal con invasión",
+            "Tumor neuroendocrino",
+            "Carcinoma neuroendocrino",
+            "Carcinoma invasivo, tipo no puede determinarse",
+            "Otro tipo histológico no listado (especificar)"
+          ],
+          "children": [
+            {
+              "id": 30101,
+              "name": "Patrón Morfológico Específico (para carcinoma invasivo de tipo no especial (ductal))",
+              "type": "text"
+            },
+            {
+              "id": 30102,
+              "name": "Patrón Variante (para carcinoma lobulillar invasivo)",
+              "type": "text"
+            },
+            {
+              "id": 30103,
+              "name": "Tipos Histológicos Mixtos (especificar tipos y porcentajes de cada uno)",
+              "type": "text"
+            },
+            {
+              "id": 30104,
+              "name": "Carcinoma Metaplásico Mixto (especificar tipos y porcentajes de cada uno)",
+              "type": "text"
+            },
+            {
+              "id": 30105,
+              "name": "Carcinoma Metaplásico Otro Tipo (especificar)",
+              "type": "text"
+            },
+            {
+              "id": 30106,
+              "name": "Carcinoma Invasivo con Características de (especificar)",
+              "type": "text"
+            },
+            {
+              "id": 30107,
+              "name": "Otro Tipo Histológico No Listado (especificar)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Grado Histológico (Nottingham)",
+          "type": "group",
+          "children": [
+            {
+              "id": 30201,
+              "name": "Aplicabilidad del Grado",
+              "type": "coded",
+              "options": [
+                "Aplica — graduar",
+                "No aplica (sin carcinoma residual o solo microinvasión)"
+              ]
+            },
+            {
+              "id": 30202,
+              "name": "Diferenciación Glandular/Tubular",
+              "type": "coded",
+              "options": [
+                "Score 1 (>75% del área tumoral forma estructuras glandulares/tubulares)",
+                "Score 2 (10-75% del área tumoral forma estructuras glandulares/tubulares)",
+                "Score 3 (<10% del área tumoral forma estructuras glandulares/tubulares)",
+                "Solo microinvasión presente (no se grada)",
+                "Score no puede determinarse"
+              ]
+            },
+            {
+              "id": 30203,
+              "name": "Pleomorfismo Nuclear",
+              "type": "coded",
+              "options": [
+                "Score 1 (Núcleos pequeños, regulares, cromatina uniforme, poca variación)",
+                "Score 2 (Células más grandes, núcleos vesiculares, nucléolos visibles, moderada variabilidad)",
+                "Score 3 (Núcleos vesiculares, nucléolos prominentes, marcada variación, formas bizarras)",
+                "Solo microinvasión presente (no se grada)",
+                "Score no puede determinarse"
+              ]
+            },
+            {
+              "id": 30204,
+              "name": "Tasa Mitótica",
+              "type": "coded",
+              "options": [
+                "Score 1",
+                "Score 2",
+                "Score 3",
+                "Solo microinvasión presente (no se grada)",
+                "Score no puede determinarse"
+              ]
+            },
+            {
+              "id": 30205,
+              "name": "Grado Total",
+              "type": "coded",
+              "options": [
+                "G1 (scores 3, 4 o 5)",
+                "G2 (scores 6 o 7)",
+                "G3 (scores 8 o 9)",
+                "Solo microinvasión presente (no se grada)",
+                "Score no puede determinarse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Tamaño del Tumor",
+          "type": "group",
+          "children": [
+            {
+              "id": 30301,
+              "name": "Estado del tamaño",
+              "type": "coded",
+              "options": [
+                "Sin carcinoma invasivo residual",
+                "Solo microinvasión (≤1 mm)",
+                "Medida disponible (>1 mm)",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 30302,
+              "name": "Dimensión mayor del foco invasivo (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 30303,
+              "name": "Calificador de distancia",
+              "type": "coded",
+              "options": [
+                "Medida exacta",
+                "Al menos",
+                "Menos de",
+                "Mayor de"
+              ]
+            },
+            {
+              "id": 30304,
+              "name": "Segunda dimensión (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 30305,
+              "name": "Tercera dimensión (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 30306,
+              "name": "Dimensiones completas (texto exacto)",
+              "type": "text"
+            },
+            {
+              "id": 30307,
+              "name": "Foco mayor en biopsia (solo espécimen biopsia)",
+              "type": "group",
+              "children": [
+                {
+                  "id": 3030701,
+                  "name": "Tamaño foco mayor en biopsia (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 3030702,
+                  "name": "Calificador",
+                  "type": "coded",
+                  "options": [
+                    "Medida exacta",
+                    "Al menos",
+                    "No puede determinarse"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 304,
+          "name": "Focalidad Tumoral",
+          "type": "group",
+          "children": [
+            {
+              "id": 30401,
+              "name": "Focalidad",
+              "type": "coded",
+              "options": [
+                "Unifocal",
+                "Multifocal",
+                "Carcinoma Invasivo no residual",
+                "No puede determinarse"
+              ],
+              "children": [
+                {
+                  "id": 3040101,
+                  "name": "Característica Multifocal",
+                  "type": "coded",
+                  "options": [
+                    "Multiples focos del carcinoma invasivo con caracterisitcas similares",
+                    "Múltiples focos del carcinoma invasivo con características diferentes",
+                    "Otro",
+                    "No se puede determinar"
+                  ]
+                },
+                {
+                  "id": 3040102,
+                  "name": "Otra característica / No se puede determinar",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "id": 30402,
+              "name": "Número de focos (calificador)",
+              "type": "coded",
+              "options": [
+                "Número exacto",
+                "Al menos",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 30403,
+              "name": "Número de focos (valor)",
+              "type": "number"
+            },
+            {
+              "id": 30404,
+              "name": "Tamaños focos individuales (mm, separados por ;)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 305,
+          "name": "Invasión Linfática",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Focal (IL en un solo bloque)",
+            "Extensa (IL en dos o más bloques)",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 30501,
+              "name": "Especificación del otro tipo de invasión linfática",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 306,
+          "name": "Invasión Vascular",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Focal (IV en un solo bloque)",
+            "Extensa (IV en dos o más bloques)",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 30601,
+              "name": "Especificación del otro tipo de invasión vascular",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 307,
+          "name": "Invasión Linfovascular",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Focal (ILV en un solo bloque)",
+            "Extensa (ILV en dos o más bloques)",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 30701,
+              "name": "Especificación del otro tipo de invasión linfovascular",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 308,
+          "name": "Invasión Linfática Dérmica",
+          "type": "coded",
+          "options": [
+            "No aplicable (Sin piel presente)",
+            "No identificada",
+            "Presente",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 30801,
+              "name": "Especificación del otro tipo de invasión linfática dérmica",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 309,
+          "name": "Invasión Vascular Dérmica",
+          "type": "coded",
+          "options": [
+            "No aplicable (Sin piel presente)",
+            "No identificada",
+            "Presente",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 30901,
+              "name": "Especificación del otro tipo de invasión vascular dérmica",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 310,
+          "name": "Invasión Linfovascular Dérmica",
+          "type": "coded",
+          "options": [
+            "No aplicable (Sin piel presente)",
+            "No identificada",
+            "Presente",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 31001,
+              "name": "Especificación del otro tipo de invasión linfovascular dérmica",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 311,
+          "name": "Extensión Tumoral",
+          "type": "group",
+          "children": [
+            {
+              "id": 31101,
+              "name": "Estado de extensión",
+              "type": "coded",
+              "options": [
+                "No aplica (piel, pezón y músculo esquelético ausentes o no comprometidos)",
+                "Piel presente y comprometida",
+                "Músculo esquelético presente y comprometido"
+              ]
+            },
+            {
+              "id": 31102,
+              "name": "Estado pezón",
+              "type": "coded_multiple",
+              "options": [
+                "No presente en el espécimen",
+                "Presente y no involucrado",
+                "Enfermedad de Paget presente",
+                "Involucrado por carcinoma invasivo",
+                "Carcinoma ductal in situ (CDIS) presente en los conductos galactóforos principales.",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 3110201,
+                  "name": "Especificación del estado del pezón (otro/no se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "id": 31103,
+              "name": "Invasión de piel (tipo)",
+              "type": "coded",
+              "options": [
+                "No presente en el espécimen",
+                "Presente y no involucrado",
+                "Carcinoma invade dermis/epidermis sin ulceración (no cambia T)",
+                "Carcinoma invade dermis/epidermis con ulceración (T4b)",
+                "Carcinoma no invade directamente dermis/epidermis (no cambia T)",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 3110301,
+                  "name": "Especificación del tipo de invasión de piel (otro/no se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "id": 31104,
+              "name": "Focos satélite de piel",
+              "type": "coded",
+              "options": [
+                "No identificados",
+                "Focos satélite de carcinoma invasivo presentes — T4b",
+                "CDIS involucra epidermis del pezón (Enfermedad de Paget — no cambia T)"
+              ]
+            },
+            {
+              "id": 31105,
+              "name": "Músculo esquelético (extensión)",
+              "type": "coded",
+              "options": [
+                "No presente en el espécimen",
+                "Presente y no involucrado",
+                "Carcinoma invade músculo esquelético",
+                "Carcinoma invade músculo esquelético y pared torácica (T4a)",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 3110501,
+                  "name": "Especificación del tipo de invasión de músculo esquelético (otro/no se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 312,
+          "name": "Microcalcificaciones",
+          "type": "coded_multiple",
+          "options": [
+            "No identificadas",
+            "Presentes en CDIS",
+            "Presentes en carcinoma invasivo",
+            "Presentes en tejido no neoplásico",
+            "Otro (especificar)"
+          ],
+          "children": [
+            {
+              "id": 31201,
+              "name": "Especificación del otro tipo de microcalcificación",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hallazgos In Situ (CDIS)",
+      "type": "section",
+      "fields": [
+        {
+          "id": 401,
+          "name": "Presencia CDIS",
+          "type": "coded",
+          "options": [
+            "No identificado",
+            "Presente",
+            "No puede excluirse"
+          ]
+        },
+        {
+          "id": 402,
+          "name": "Tipo Histológico CDIS",
+          "type": "coded_multiple",
+          "options": [
+            "Carcinoma ductal in situ (CDIS)",
+            "Enfermedad de Paget del pezón",
+            "Carcinoma papilar encapsulado in situ",
+            "Carcinoma papilar sólido in situ",
+            "Otro tipo histológico in situ (especificar)"
+          ],
+          "children": [
+            {
+              "id": 40201,
+              "name": "Otro tipo histológico in situ (especificar)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 403,
+          "name": "Componente Intraductal Extenso (EIC)",
+          "type": "coded",
+          "options": [
+            "Negativo para EIC",
+            "Positivo para EIC",
+            "Solo CDIS presente tras terapia neoadyuvante (ypTis)"
+          ]
+        },
+        {
+          "id": 404,
+          "name": "Patrones Arquitectónicos CDIS",
+          "type": "coded_multiple",
+          "options": [
+            "Comedón",
+            "Enfermedad de Paget (CDIS involucra piel del pezón)",
+            "Cribriforme",
+            "Micropapilar",
+            "Papilar",
+            "Sólido",
+            "Carcinoma papilar sólido in situ",
+            "Carcinoma papilar encapsulado in situ",
+            "Otro (especificar)"
+          ],
+          "children": [
+            {
+              "id": 40401,
+              "name": "Otro patrón arquitectónico (especificar)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 405,
+          "name": "Grado Nuclear CDIS",
+          "type": "coded",
+          "options": [
+            "Grado I (bajo)",
+            "Grado II (intermedio)",
+            "Grado III (alto)",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 40501,
+              "name": "Otro grado nuclear CDIS (especificar)",
+              "type": "text"
+            },
+            {
+              "id": 40502,
+              "name": "Comentario del grado nuclear CDIS",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 406,
+          "name": "Necrosis CDIS",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente, focal (pequeños focos o necrosis de célula única)",
+            "Presente, central (necrosis expansiva tipo comedón)",
+            "No puede determinarse",
+            "Otro (especificar)"
+          ],
+          "children": [
+            {
+              "id": 40601,
+              "name": "Otro tipo de Necrosis CDIS (especificar)",
+              "type": "text"
+            },
+            {
+              "id": 40602,
+              "name": "Explicación 'No puede determinarse Necrosis CDIS'",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 407,
+          "name": "Tamaño/Extensión del CDIS",
+          "type": "group",
+          "children": [
+            {
+              "id": 40701,
+              "name": "Estado tamaño CDIS",
+              "type": "coded",
+              "options": [
+                "Tamaño estimado disponible",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 40702,
+              "name": "Dimensión mayor estimada CDIS (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 40703,
+              "name": "Segunda dimensión CDIS (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 40704,
+              "name": "Dimensiones completas CDIS (texto)",
+              "type": "text"
+            },
+            {
+              "id": 40705,
+              "name": "Número de bloques con CDIS",
+              "type": "number"
+            },
+            {
+              "id": 40706,
+              "name": "Número de bloques examinados",
+              "type": "number"
+            },
+            {
+              "id": 40707,
+              "name": "Extensión del CDIS",
+              "type": "coded_multiple",
+              "options": [
+                "Mezclado con el Carcinoma Invasivo",
+                "Extiende mas alla del Carcinoma Invasivo",
+                "Separado del Carcinoma Invasivo",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 4070701,
+                  "name": "Especificar CDIS como % del tumor entero",
+                  "type": "number",
+                  "unit": "%"
+                },
+                {
+                  "id": 4070702,
+                  "name": "Especificar extensión del CDIS (otro/no se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 408,
+          "name": "Carcinoma Lobulillar In Situ (CLIS)",
+          "type": "coded_multiple",
+          "options": [
+            "No identificado",
+            "Carcinoma Lobulillar in situ, clasico",
+            "Carcinoma Lobulillar in situ, pleomórfico",
+            "Carcinoma lobulillar in situ (especificar)",
+            "Hiperplasia lobulillar atípica",
+            "Hiperplasia ductal atípica",
+            "Atipia epitelial plana",
+            "Otro (especificar)"
+          ],
+          "children": [
+            {
+              "id": 40801,
+              "name": "Especificar otro tipo de CLIS",
+              "type": "text"
+            },
+            {
+              "id": 40802,
+              "name": "Extensión CLIS",
+              "type": "text"
+            },
+            {
+              "id": 40803,
+              "name": "Comentario CLIS",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Hallazgos Filoides",
+      "type": "section",
+      "fields": [
+        {
+          "id": 501,
+          "name": "Tipo Histológico Filoides",
+          "type": "coded",
+          "options": [
+            "Tumor filoides benigno",
+            "Tumor filoides borderline",
+            "Tumor filoides maligno"
+          ]
+        },
+        {
+          "id": 502,
+          "name": "Celularidad Estromal",
+          "type": "coded",
+          "options": [
+            "Leve (los núcleos estromales no se superponen)",
+            "Moderada (algunos núcleos estromales superpuestos)",
+            "Marcada (muchos núcleos estromales superpuestos)"
+          ]
+        },
+        {
+          "id": 503,
+          "name": "Atipia Estromal",
+          "type": "coded",
+          "options": [
+            "Ninguna",
+            "Leve (variación mínima en el tamaño nuclear, cromatina uniforme y contornos nucleares lisos)",
+            "Moderado (mayor variación en el tamaño nuclear y membranas nucleares irregulares)",
+            "Marcado (pleomorfismo nuclear marcado, hipercromasia y contornos nucleares irregulares)"
+          ]
+        },
+        {
+          "id": 504,
+          "name": "Sobrecrecimiento estromal",
+          "type": "coded",
+          "options": [
+            "Ausente",
+            "Presente",
+            "No se puede determinar"
+          ]
+        },
+        {
+          "id": 505,
+          "name": "Tasa Mitótica",
+          "type": "coded",
+          "options": [
+            "Ninguna identificada",
+            "Número específico de mitosis por 10 campos de gran aumento",
+            "Número específico de mitosis por milímetro cuadrado",
+            "No se puede determinar"
+          ],
+          "children": [
+            {
+              "id": 50501,
+              "name": "Número de mitosis por 10 campos de gran aumento",
+              "type": "number"
+            },
+            {
+              "id": 50502,
+              "name": "Número de mitosis por milímetro cuadrado",
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "id": 506,
+          "name": "Borde tumoral histológico",
+          "type": "coded",
+          "options": [
+            "Circunscrito (bien delimitado; expansivo)",
+            "Focal infiltrativo",
+            "Extensivo e infiltrante",
+            "No se puede determinar"
+          ]
+        },
+        {
+          "id": 507,
+          "name": "Elementos heterólogos malignos",
+          "type": "coded",
+          "options": [
+            "No identificado",
+            "Liposarcoma (excluido el liposarcoma bien diferenciado)",
+            "Osteosarcoma",
+            "Condrosarcoma",
+            "Otro (especificar)"
+          ],
+          "children": [
+            {
+              "id": 50701,
+              "name": "Especificación Elemento heterólogo maligno (otro)",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Efectos del Tratamiento y RCB",
+      "type": "section",
+      "fields": [
+        {
+          "id": 601,
+          "name": "Efecto en la Mama",
+          "type": "coded",
+          "options": [
+            "Sin terapia prequirúrgica conocida",
+            "Sin respuesta definida a la terapia prequirúrgica en el carcinoma invasivo",
+            "Respuesta probable o definitiva a la terapia prequirúrgica en el carcinoma invasivo",
+            "Sin carcinoma invasivo residual en la mama tras terapia prequirúrgica",
+            "Otro (especificar)",
+            "No se puede determinar"
+          ],
+          "children": [
+            {
+              "id": 60101,
+              "name": "Especificación efecto en la mama (otro/no se puede determinar)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 602,
+          "name": "Efecto en los Ganglios",
+          "type": "coded",
+          "options": [
+            "No aplica",
+            "Sin respuesta definida en carcinoma metastásico",
+            "Respuesta probable o definitiva en carcinoma metastásico",
+            "Sin metástasis nodal. Fibrosis o agregados histiocíticos (respuesta patológica completa nodal)",
+            "Sin metástasis nodal y sin fibrosis en los ganglios"
+          ]
+        },
+        {
+          "id": 603,
+          "name": "Parámetros RCB",
+          "type": "group",
+          "children": [
+            {
+              "id": 60301,
+              "name": "Dimensión mayor lecho tumoral primario (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 60302,
+              "name": "Segunda dimensión mayor (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 60303,
+              "name": "Dimensiones completas lecho tumoral (texto)",
+              "type": "text"
+            },
+            {
+              "id": 60304,
+              "name": "Celularidad general del cáncer (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 60305,
+              "name": "Porcentaje de cáncer In Situ (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 60306,
+              "name": "Número de ganglios positivos",
+              "type": "number"
+            },
+            {
+              "id": 60307,
+              "name": "Diámetro mayor metástasis nodal (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 60308,
+              "name": "Score RCB numérico",
+              "type": "number"
+            },
+            {
+              "id": 60309,
+              "name": "Clase RCB",
+              "type": "coded",
+              "options": [
+                "RCB-0 (pCR)",
+                "RCB-I",
+                "RCB-II",
+                "RCB-III"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Biomarcadores",
+      "type": "section",
+      "fields": [
+        {
+          "id": 701,
+          "name": "Espécimen/Bloque Testado",
+          "type": "text"
+        },
+        {
+          "id": 702,
+          "name": "Receptor Estrógeno (RE)",
+          "type": "group",
+          "children": [
+            {
+              "id": 70201,
+              "name": "Estado RE",
+              "type": "coded",
+              "options": [
+                "Positivo (>10% de células con positividad nuclear)",
+                "Positivo Bajo (1-10% de células con positividad nuclear)",
+                "Negativo (<1%)",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 70202,
+              "name": "Porcentaje células positivas RE (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 70203,
+              "name": "Rango porcentaje RE",
+              "type": "coded",
+              "options": [
+                "0-10%",
+                "11-20%",
+                "21-30%",
+                "31-40%",
+                "41-50%",
+                "51-60%",
+                "61-70%",
+                "71-80%",
+                "81-90%",
+                "91-100%"
+              ]
+            },
+            {
+              "id": 70204,
+              "name": "Intensidad promedio de tinción RE",
+              "type": "coded",
+              "options": [
+                "Débil (1+)",
+                "Moderada (2+)",
+                "Fuerte (3+)"
+              ]
+            },
+            {
+              "id": 70205,
+              "name": "Estado controles internos RE",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "Control interno presente y tiñe como se espera",
+                "Control interno ausente; controles externos tiñen correctamente",
+                "Otro (especificar)"
+              ]
+            },
+            {
+              "id": 70206,
+              "name": "Allred RE (proporción / intensidad / total)",
+              "type": "group",
+              "children": [
+                {
+                  "id": 7020601,
+                  "name": "Proporción Allred",
+                  "type": "number"
+                },
+                {
+                  "id": 7020602,
+                  "name": "Intensidad Allred",
+                  "type": "number"
+                },
+                {
+                  "id": 7020603,
+                  "name": "Total Allred",
+                  "type": "number"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 703,
+          "name": "Receptor Progesterona (RP / PgR)",
+          "type": "group",
+          "children": [
+            {
+              "id": 70301,
+              "name": "Estado RP",
+              "type": "coded",
+              "options": [
+                "Positivo",
+                "Negativo (<1%)",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 70302,
+              "name": "Porcentaje células positivas RP (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 70303,
+              "name": "Rango porcentaje RP",
+              "type": "coded",
+              "options": [
+                "1-10%",
+                "11-20%",
+                "21-30%",
+                "31-40%",
+                "41-50%",
+                "51-60%",
+                "61-70%",
+                "71-80%",
+                "81-90%",
+                "91-100%"
+              ]
+            },
+            {
+              "id": 70304,
+              "name": "Intensidad promedio de tinción RP",
+              "type": "coded",
+              "options": [
+                "Débil (1+)",
+                "Moderada (2+)",
+                "Fuerte (3+)"
+              ]
+            },
+            {
+              "id": 70305,
+              "name": "Estado controles internos RP",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "Control interno presente y tiñe como se espera",
+                "Control interno ausente; controles externos tiñen correctamente",
+                "Otro (especificar)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 704,
+          "name": "HER2 por Inmunohistoquímica (IHC)",
+          "type": "group",
+          "children": [
+            {
+              "id": 70401,
+              "name": "Score HER2 IHC",
+              "type": "coded",
+              "options": [
+                "Negativo (Score 0): tinción de membrana no detectada",
+                "Negativo (Score 0): tinción de membrana incompleta, débil en ≤10% de células",
+                "Negativo (Score 1+)",
+                "Equívoco (Score 2+)",
+                "Positivo (Score 3+)",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 70402,
+              "name": "Patrón Score 0 (sub-categoría ultralow)",
+              "type": "coded",
+              "options": [
+                "Sin tinción de membrana detectada (0 ausente)",
+                "Tinción de membrana incompleta, imperceptible en ≤10% de células (0+ con tinción)"
+              ]
+            },
+            {
+              "id": 70403,
+              "name": "Porcentaje células tinción completa intensa (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 70404,
+              "name": "Heterogeneidad clonal (clustered)",
+              "type": "group",
+              "children": [
+                {
+                  "id": 7040401,
+                  "name": "Heterogeneidad clonal presente",
+                  "type": "coded",
+                  "options": [
+                    "No aplica",
+                    "No identificada (tinción 3+ homogénea)",
+                    "Presente (poblaciones 3+ y no-3+ distintas)"
+                  ]
+                },
+                {
+                  "id": 7040402,
+                  "name": "Porcentaje cáncer con tinción 3+ (%)",
+                  "type": "number",
+                  "unit": "%"
+                },
+                {
+                  "id": 7040403,
+                  "name": "Score en áreas no-3+",
+                  "type": "coded",
+                  "options": [
+                    "0",
+                    "1+",
+                    "2+"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 705,
+          "name": "HER2 por Hibridación In Situ (ISH)",
+          "type": "group",
+          "children": [
+            {
+              "id": 70501,
+              "name": "Resultado ISH",
+              "type": "coded",
+              "options": [
+                "Positivo (Amplificado)",
+                "Negativo (No amplificado)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 7050101,
+                  "name": "Especificación resultado ISH (no se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "id": 70502,
+              "name": "Promedio señales HER2 por célula",
+              "type": "number"
+            },
+            {
+              "id": 70503,
+              "name": "Promedio señales CEP17 por célula",
+              "type": "number"
+            },
+            {
+              "id": 70504,
+              "name": "Ratio HER2/CEP17",
+              "type": "number"
+            },
+            {
+              "id": 70505,
+              "name": "Número de observadores",
+              "type": "number"
+            },
+            {
+              "id": 70506,
+              "name": "Número de células tumorales invasivas contadas",
+              "type": "number"
+            },
+            {
+              "id": 70507,
+              "name": "Resultado FISH HER2",
+              "type": "coded",
+              "description": "Resultado simplificado de la prueba de hibridación in situ por fluorescencia (FISH) para el gen HER2, consolidado para fines de registro clínico y reporte patológico.",
+              "options": [
+                "Positivo (+)",
+                "Negativo (-)",
+                "Desconocido",
+                "No aplica"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 706,
+          "name": "Ki-67 Índice Proliferativo",
+          "type": "group",
+          "children": [
+            {
+              "id": 70601,
+              "name": "Ki-67 porcentaje exacto (%)",
+              "type": "number",
+              "unit": "%"
+            },
+            {
+              "id": 70602,
+              "name": "Ki-67 por rango",
+              "type": "coded",
+              "options": [
+                "0-5%",
+                "6-10%",
+                "11-15%",
+                "16-20%",
+                "21-30%",
+                "31-40%",
+                "41-50%",
+                "51-60%",
+                "61-70%",
+                "71-80%",
+                "81-90%",
+                "91-100%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 707,
+          "name": "Pre-análisis y Metodología",
+          "type": "group",
+          "children": [
+            {
+              "id": 70701,
+              "name": "Tiempo isquemia fría",
+              "type": "coded",
+              "options": [
+                "Cumple requisitos ASCO/CAP (<60 min)",
+                "No cumple requisitos ASCO/CAP",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 70702,
+              "name": "Tiempo isquemia fría (minutos)",
+              "type": "number",
+              "unit": "min"
+            },
+            {
+              "id": 70703,
+              "name": "Tiempo de fijación (horas)",
+              "type": "number",
+              "unit": "h"
+            },
+            {
+              "id": 70704,
+              "name": "Fijador",
+              "type": "coded_multiple",
+              "options": [
+                "Formalina tamponada",
+                "Decalcificación",
+                "Otro (especificar)"
+              ]
+            },
+            {
+              "id": 70705,
+              "name": "Tipo de test RE",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "Test aprobado FDA (especificar)",
+                "Test de desarrollo propio del laboratorio"
+              ]
+            },
+            {
+              "id": 70706,
+              "name": "Anticuerpo primario RE",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "SP1",
+                "6F11",
+                "1D5",
+                "Otro (especificar)"
+              ]
+            },
+            {
+              "id": 70707,
+              "name": "Anticuerpo primario RP",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "1E2",
+                "636",
+                "16",
+                "1A6",
+                "1294",
+                "312",
+                "Otro"
+              ]
+            },
+            {
+              "id": 70708,
+              "name": "Tipo de test HER2 IHC",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "Test aprobado FDA (especificar)",
+                "Test de desarrollo propio del laboratorio"
+              ]
+            },
+            {
+              "id": 70709,
+              "name": "Anticuerpo primario HER2 IHC",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "4B5",
+                "HercepTest",
+                "A0485",
+                "SP3",
+                "CB11",
+                "Otro"
+              ]
+            },
+            {
+              "id": 70710,
+              "name": "Tipo de test HER2 ISH",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "Test aprobado FDA (especificar)",
+                "Test de desarrollo propio del laboratorio"
+              ]
+            },
+            {
+              "id": 70711,
+              "name": "Anticuerpo primario Ki-67",
+              "type": "coded",
+              "options": [
+                "No aplica",
+                "MIB1",
+                "SP6",
+                "MM1",
+                "30-9",
+                "IR/IS626",
+                "Otro"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Márgenes Quirúrgicos",
+      "type": "section",
+      "fields": [
+        {
+          "id": 801,
+          "name": "Márgenes Quirúrgicos (FALP)",
+          "type": "coded",
+          "description": "Clasificación simplificada y no estándar del estado general de los márgenes quirúrgicos, según criterio particular del centro clínico. Para biopsias sin orientación anatómica (core/PAAF) debe registrarse como 'No aplica'.",
+          "options": [
+            "Márgenes negativos",
+            "Márgenes microscópicamente positivos",
+            "Márgenes macroscópicamente positivos",
+            "Márgenes no evaluados",
+            "No aplica",
+            "Desconocido"
+          ]
+        },
+        {
+          "id": 802,
+          "name": "Margen Carcinoma Invasivo",
+          "type": "group",
+          "children": [
+            {
+              "id": 80201,
+              "name": "Estado margen invasivo",
+              "type": "coded",
+              "options": [
+                "No aplica (sin carcinoma invasivo residual en espécimen)",
+                "Todos los márgenes negativos para invasión",
+                "Carcinoma invasivo presente en el margen"
+              ]
+            },
+            {
+              "id": 80202,
+              "name": "Calificador distancia margen invasivo",
+              "type": "coded",
+              "options": [
+                "Medida exacta",
+                "Menos de",
+                "Mayor de",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80203,
+              "name": "Distancia al margen más cercano (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 80204,
+              "name": "Margen(es) más cercano(s) al invasivo",
+              "type": "coded_multiple",
+              "options": [
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80205,
+              "name": "Margen(es) comprometido(s) por invasivo",
+              "type": "coded_multiple",
+              "options": [
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80206,
+              "name": "Extensión del compromiso del margen",
+              "type": "text"
+            },
+            {
+              "id": 80207,
+              "name": "Distancias individuales por margen invasivo (mm)",
+              "type": "group",
+              "children": [
+                {
+                  "id": 8020701,
+                  "name": "Distancia margen Anterior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8020702,
+                  "name": "Distancia margen Posterior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8020703,
+                  "name": "Distancia margen Superior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8020704,
+                  "name": "Distancia margen Inferior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8020705,
+                  "name": "Distancia margen Medial (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8020706,
+                  "name": "Distancia margen Lateral (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 803,
+          "name": "Margen CDIS",
+          "type": "group",
+          "children": [
+            {
+              "id": 80301,
+              "name": "Estado margen CDIS",
+              "type": "coded",
+              "options": [
+                "No aplica (sin CDIS en espécimen)",
+                "Todos los márgenes negativos para CDIS",
+                "CDIS presente en el margen"
+              ]
+            },
+            {
+              "id": 80302,
+              "name": "Calificador distancia margen CDIS",
+              "type": "coded",
+              "options": [
+                "Medida exacta",
+                "Menos de",
+                "Mayor de",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80303,
+              "name": "Distancia CDIS al margen más cercano (mm)",
+              "type": "number",
+              "unit": "mm"
+            },
+            {
+              "id": 80304,
+              "name": "Margen(es) más cercano(s) al CDIS",
+              "type": "coded_multiple",
+              "options": [
+                "No aplica",
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80305,
+              "name": "Margen(es) comprometido(s) por CDIS",
+              "type": "coded_multiple",
+              "options": [
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 80306,
+              "name": "Distancias individuales por margen CDIS (mm)",
+              "type": "group",
+              "children": [
+                {
+                  "id": 8030601,
+                  "name": "Distancia CDIS margen Anterior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8030602,
+                  "name": "Distancia CDIS margen Posterior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8030603,
+                  "name": "Distancia CDIS margen Superior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8030604,
+                  "name": "Distancia CDIS margen Inferior (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8030605,
+                  "name": "Distancia CDIS margen Medial (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "id": 8030606,
+                  "name": "Distancia CDIS margen Lateral (mm)",
+                  "type": "number",
+                  "unit": "mm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 804,
+          "name": "Margen Filoide",
+          "type": "group",
+          "children": [
+            {
+              "id": 80401,
+              "name": "Estado margen filoide",
+              "type": "coded",
+              "options": [
+                "Todos los márgenes negativos para filoide",
+                "Tumor filoides presente al margen",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ]
+            },
+            {
+              "id": 80402,
+              "name": "Margen(es) más cercano(s) al Tumor Filoides",
+              "type": "coded_multiple",
+              "options": [
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 8040201,
+                  "name": "Especificación Margen más cercano al tumor filoides (Otro / No se puede determinar)",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "id": 80403,
+              "name": "Calificador de distancia",
+              "type": "coded",
+              "options": [
+                "Distancia exacta",
+                "Menor de",
+                "Mayor de",
+                "Otro",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 8040301,
+                  "name": "Valor del calificador de distancia",
+                  "type": "number",
+                  "unit": "mm"
+                }
+              ]
+            },
+            {
+              "id": 80404,
+              "name": "Margen(es) envuelto(s) por el tumor filoide",
+              "type": "coded_multiple",
+              "options": [
+                "Anterior",
+                "Posterior",
+                "Superior",
+                "Inferior",
+                "Medial",
+                "Lateral",
+                "Otro (especificar)",
+                "No se puede determinar"
+              ],
+              "children": [
+                {
+                  "id": 8040401,
+                  "name": "Especificación Margen envuelto por el tumor filoide",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ganglios Linfáticos Regionales",
+      "type": "section",
+      "fields": [
+        {
+          "id": 901,
+          "name": "Estado de los Ganglios",
+          "type": "coded",
+          "options": [
+            "No aplica (sin ganglios linfáticos regionales enviados o encontrados)",
+            "Ganglios linfáticos regionales presentes"
+          ],
+          "children": [
+            {
+              "id": 90101,
+              "name": "Compromiso de Ganglios Linfáticos Regionales",
+              "type": "coded",
+              "options": [
+                "Todos los nodos regionales negativos para el tumor",
+                "Tumor presente en ganglio(s) linfático(s) regional(es)",
+                "Otro (especificar)",
+                "No puede determinarse"
+              ]
+            },
+            {
+              "id": 90102,
+              "name": "Especificación Compromiso Ganglios Linfáticos Regionales (Otro / No puede determinarse)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 902,
+          "name": "Topografía de Ganglios Evaluados",
+          "type": "coded_multiple",
+          "options": [
+            "Axilar, SAI",
+            "Axilar, nivel I",
+            "Axilar, nivel II",
+            "Axilar, nivel III (Apical/Infraclavicular)",
+            "Mamaria interna (Paraesternal)",
+            "Supraclavicular",
+            "Intramamario",
+            "No especificado (SAI)"
+          ]
+        },
+        {
+          "id": 903,
+          "name": "N° ganglios con Macrometástasis (>2mm)",
+          "type": "number"
+        },
+        {
+          "id": 904,
+          "name": "N° ganglios con Micrometástasis (>0.2mm a 2mm)",
+          "type": "number"
+        },
+        {
+          "id": 905,
+          "name": "N° ganglios con Células Tumorales Aisladas (≤0.2mm o ≤200 células)",
+          "type": "number"
+        },
+        {
+          "id": 906,
+          "name": "Número total de ganglios linfáticos positivos (macroscópicos y microscópicos) contabilizados para la categoría pN",
+          "type": "number"
+        },
+        {
+          "id": 907,
+          "name": "Calificador tamaño depósito nodal",
+          "type": "coded",
+          "options": [
+            "Medida exacta",
+            "Menos de",
+            "Mayor de",
+            "No puede determinarse"
+          ]
+        },
+        {
+          "id": 908,
+          "name": "Tamaño mayor depósito nodal (mm)",
+          "type": "number",
+          "unit": "mm"
+        },
+        {
+          "id": 909,
+          "name": "Extensión Extranodal",
+          "type": "coded",
+          "options": [
+            "Presente, 2 mm o menos",
+            "Presente, mayor de 2 mm",
+            "Presente (extensión no especificada)",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ]
+        },
+        {
+          "id": 910,
+          "name": "Total ganglios examinados (centinela + no centinela)",
+          "type": "number"
+        },
+        {
+          "id": 911,
+          "name": "Ganglios centinela examinados",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Metástasis a Distancia",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1001,
+          "name": "Sitios Distantes Comprometidos",
+          "type": "coded_multiple",
+          "options": [
+            "No aplica",
+            "Ganglio linfático no regional (especificar si posible)",
+            "Pulmón",
+            "Hígado",
+            "Hueso",
+            "Cerebro",
+            "Otro (especificar)",
+            "No puede determinarse"
+          ],
+          "children": [
+            {
+              "id": 100101,
+              "name": "Especificación Ganglio Linfático no Regional",
+              "type": "text"
+            },
+            {
+              "id": 100102,
+              "name": "Especificación de Sitios Distantes Comprometidos (Otro / No puede determinarse)",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1101,
+          "name": "Modificadores de Clasificación",
+          "type": "coded_multiple",
+          "options": [
+            "No aplica",
+            "y (post-terapia neoadyuvante)",
+            "r (recurrencia)"
+          ]
+        },
+        {
+          "id": 1102,
+          "name": "Tumor Primario (pT)",
+          "type": "coded",
+          "options": [
+            "pT no asignado (no puede determinarse)",
+            "pT0",
+            "pTis (CDIS)",
+            "pTis (Paget)",
+            "pT1mi",
+            "pT1a",
+            "pT1b",
+            "pT1c",
+            "pT1 (subcategoría no puede determinarse)",
+            "pT2",
+            "pT3",
+            "pT4a",
+            "pT4b",
+            "pT4c",
+            "pT4d",
+            "pT4 (subcategoría no puede determinarse)"
+          ]
+        },
+        {
+          "id": 1103,
+          "name": "T Suffix",
+          "type": "coded",
+          "options": [
+            "No aplica",
+            "(m) múltiples tumores sincrónicos primarios en un mismo órgano"
+          ]
+        },
+        {
+          "id": 1104,
+          "name": "Ganglios Linfáticos Regionales (pN)",
+          "type": "coded",
+          "options": [
+            "pN no asignado (sin ganglios enviados o encontrados)",
+            "pN no asignado (no puede determinarse)",
+            "pN0",
+            "pN0 (i+)",
+            "pN0 (mol+) — RT-PCR positivo sin células tumorales aisladas",
+            "pN1mi",
+            "pN1a",
+            "pN1b",
+            "pN1c",
+            "pN2a",
+            "pN2b",
+            "pN3a",
+            "pN3b",
+            "pN3c"
+          ]
+        },
+        {
+          "id": 1105,
+          "name": "N Suffix",
+          "type": "coded_multiple",
+          "options": [
+            "No aplica",
+            "(sn) ganglios centinela evaluados (usar solo si <6 ganglios removidos)",
+            "(f) metástasis nodal confirmada por FNA/CNB sin resección de ganglios"
+          ]
+        },
+        {
+          "id": 1106,
+          "name": "Metástasis a Distancia (pM)",
+          "type": "coded",
+          "options": [
+            "No aplica — pM no puede determinarse desde el espécimen",
+            "pM1 (metástasis histológicamente probadas >0.2mm)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Hallazgos Adicionales y Comentarios",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1201,
+          "name": "Hallazgos Adicionales",
+          "type": "text",
+          "description": "Carcinomas invasivos más pequeños con características distintas, otros hallazgos patológicos relevantes no cubiertos anteriormente."
+        },
+        {
+          "id": 1202,
+          "name": "Comentarios",
+          "type": "text",
+          "description": "Comentarios adicionales del patólogo, estudios pendientes, aclaraciones clínicas."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Comportamiento",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1301,
+          "name": "Comportamiento",
+          "type": "coded",
+          "options": [
+            "Neoplasias benignas",
+            "Neoplasias de comportamiento incierto y desconocido",
+            "Neoplasias in situ",
+            "Neoplasias malignas de localización primaria",
+            "Neoplasias malignas de localización secundaria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Extensión diagnóstico",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1401,
+          "name": "Extensión diagnóstico",
+          "type": "coded",
+          "options": [
+            "Local",
+            "Localmente avanzado",
+            "Regional",
+            "Avanzado",
+            "Desconocido"
+          ]
+        }
+      ]
+    }
+  ]
+}

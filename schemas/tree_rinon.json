@@ -1,0 +1,1164 @@
+{
+  "template_name": "Reporte Patológico Riñón - R2BO + CAP + WHO",
+  "version": "2.0+rev4",
+  "source": "CAP Kidney_4.3.0.0 (nefrectomía parcial, total o radical) + CAP Kidney.Bx_4.3.0.0 (biopsia), AJCC 8va Ed., WHO 2022 (5ª Ed., tumores urinarios y genitales masculinos)",
+  "children": [
+    {
+      "id": 1,
+      "name": "Metadatos del Informe",
+      "type": "section",
+      "fields": [
+        {
+          "id": 101,
+          "name": "Fecha del informe",
+          "type": "date",
+          "description": "Fecha de EMISIÓN del informe o documento (validación / firma). NO es la fecha de recepción, de toma de muestra ni de nacimiento."
+        },
+        {
+          "id": 102,
+          "name": "ID Solicitud Origen",
+          "type": "text",
+          "description": "Número de una solicitud o biopsia de ORIGEN o PREVIA citada en el texto (no el número de este informe)."
+        },
+        {
+          "id": 103,
+          "name": "RUT Paciente",
+          "type": "text",
+          "description": "RUT de la paciente: sólo el número con su dígito verificador, sin la palabra RUT."
+        },
+        {
+          "id": 104,
+          "name": "RUT Patólogo",
+          "type": "text",
+          "description": "RUT del médico patólogo que firma: sólo el número con su dígito verificador."
+        },
+        {
+          "id": 105,
+          "name": "Institución de origen (DEIS)",
+          "type": "coded",
+          "description": "Nombre del establecimiento de salud que emite el informe, tal como aparece escrito."
+        },
+        {
+          "id": 106,
+          "name": "RUT Médico Solicitante",
+          "type": "text",
+          "description": "RUT del médico que SOLICITA el examen (no el del patólogo): solo el número con su dígito verificador."
+        },
+        {
+          "id": 107,
+          "name": "Número de Biopsia",
+          "type": "text",
+          "description": "Número de biopsia de ESTE informe (p. ej. el que sigue a \"BIOPSIA N°\")."
+        },
+        {
+          "id": 108,
+          "name": "Ficha",
+          "type": "text",
+          "description": "Número de ficha clínica de la paciente."
+        },
+        {
+          "id": 109,
+          "name": "Registro Clínico ID",
+          "type": "text",
+          "description": "Número del \"Registro Clínico ID\"."
+        },
+        {
+          "id": 110,
+          "name": "Nombre Paciente",
+          "type": "text",
+          "description": "Nombre de la paciente."
+        },
+        {
+          "id": 111,
+          "name": "Nombre Patólogo",
+          "type": "text",
+          "description": "Nombre del médico patólogo que firma el informe."
+        },
+        {
+          "id": 112,
+          "name": "Hipótesis diagnóstica",
+          "type": "text",
+          "description": "Diagnóstico clínico o sospecha con que se SOLICITA el examen (p. ej. «sospecha de neoplasia», «nódulo tiroideo», «lesión vesical»), tal como viene en la solicitud o en los antecedentes. No es el diagnóstico del patólogo ni la historia clínica."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Espécimen",
+      "type": "section",
+      "fields": [
+        {
+          "id": 201,
+          "name": "Procedimiento",
+          "type": "coded",
+          "options": [
+            "Biopsia por aguja",
+            "Biopsia incisional",
+            "Nefrectomía parcial",
+            "Nefrectomía total (simple)",
+            "Nefrectomía radical",
+            "Otro (especificar)",
+            "No especificado"
+          ],
+          "description": "Procedimiento con que se obtuvo el espécimen renal. Enucleación o tumorectomía renal = «Nefrectomía parcial»; biopsia percutánea, core o trucut = «Biopsia por aguja»; nefroureterectomía u otros = «Otro (especificar)»."
+        },
+        {
+          "id": 202,
+          "name": "Lateralidad del Espécimen",
+          "type": "coded",
+          "options": [
+            "Derecha",
+            "Izquierda",
+            "Bilateral",
+            "Otro (especificar)",
+            "No especificado"
+          ],
+          "description": "Lado del riñón del espécimen. «Bilateral» solo si una misma muestra o un mismo diagnóstico abarca ambos riñones sin describirlos por separado; si el informe describe cada riñón aparte, cada muestra lleva su propio lado."
+        },
+        {
+          "id": 203,
+          "name": "Muestra no diagnóstica o no concluyente",
+          "type": "coded",
+          "options": [
+            "Material insuficiente para diagnóstico",
+            "Muestra no representativa de la lesión",
+            "Atípica o sospechosa de neoplasia, no concluyente",
+            "Otro (especificar)"
+          ],
+          "description": "Solo cuando la biopsia o citología NO permite diagnóstico: material escaso o insuficiente, muestra sin la lesión (solo riñón normal, fibrosis o necrosis) o atipia/sospecha no concluyente. Si hay diagnóstico, no marcar. No confundir con «Tejido insuficiente» de Hallazgos adicionales (riñón no tumoral)."
+        },
+        {
+          "id": 204,
+          "name": "Sitio de la muestra (si no es el riñón)",
+          "type": "coded",
+          "options": [
+            "Glándula suprarrenal",
+            "Pulmón",
+            "Pleura o líquido pleural",
+            "Hueso",
+            "Hígado",
+            "Cerebro",
+            "Ganglio linfático",
+            "Partes blandas",
+            "Páncreas",
+            "Otro (especificar)"
+          ],
+          "description": "Órgano de donde se tomó la muestra SOLO si no es el riñón (p. ej., biopsia de una metástasis o citología de líquido pleural). En nefrectomías y biopsias renales no se marca. Si la muestra es una metástasis a distancia, la misma cita va también en «Sitios Distantes Comprometidos»; que es metástasis va en Comportamiento."
+        },
+        {
+          "id": 205,
+          "name": "Tipo de espécimen",
+          "type": "coded",
+          "options": [
+            "Espécimen de nefrectomía radical",
+            "Espécimen de nefrectomía total (simple)",
+            "Espécimen de nefrectomía parcial",
+            "Biopsia por aguja gruesa (cilindro)",
+            "Biopsia incisional",
+            "Aspirado con aguja fina (citología)",
+            "Otro (especificar)"
+          ],
+          "description": "Tipo de espécimen recibido (R2BO Specimen.type). Suele repetir el Procedimiento (2.1): la misma cita lleva las dos etiquetas. Nefrectomía simple = total. Biopsia percutánea, core o trucut = aguja gruesa. Nefroureterectomía, suprarrenal, líquido u otra pieza = «Otro». En una biopsia de metástasis, el tipo va aquí y el sitio en 2.4."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tumor",
+      "type": "section",
+      "fields": [
+        {
+          "id": 301,
+          "name": "Sitio Tumoral",
+          "type": "coded_multiple",
+          "options": [
+            "Polo superior",
+            "Tercio medio",
+            "Polo inferior",
+            "Otro (especificar)",
+            "No especificado"
+          ],
+          "description": "Ubicación del tumor dentro del riñón; marcar todas las que apliquen. Mesorrenal, región interpolar o polo medio = «Tercio medio». Hilio, seno renal, cara anterior/posterior u otra ubicación = «Otro (especificar)»."
+        },
+        {
+          "id": 302,
+          "name": "Tipo Histológico",
+          "type": "group",
+          "children": [
+            {
+              "id": 30201,
+              "name": "Tipo Histológico",
+              "type": "coded",
+              "options": [
+                "Carcinoma de células renales de células claras",
+                "Neoplasia renal quística multilocular de bajo potencial maligno",
+                "Carcinoma de células renales papilar",
+                "Carcinoma de células renales cromófobo",
+                "Otros tumores oncocíticos del riñón (especificar)",
+                "Carcinoma de conductos colectores",
+                "Tumor de células renales papilar de células claras",
+                "Carcinoma de células renales tubular mucinoso y de células fusiformes",
+                "Carcinoma de células renales tubuloquístico",
+                "Carcinoma de células renales asociado a enfermedad quística adquirida",
+                "Carcinoma de células renales eosinofílico sólido y quístico",
+                "Carcinoma de células renales, SAI (no clasificado)",
+                "Carcinoma de células renales con reordenamiento de TFE3",
+                "Carcinoma de células renales con alteración de TFEB",
+                "Carcinoma de células renales con mutación de ELOC (antes TCEB1)",
+                "Carcinoma de células renales con deficiencia de fumarato hidratasa",
+                "Carcinoma de células renales con deficiencia de succinato deshidrogenasa (SDH)",
+                "Carcinoma de células renales con reordenamiento de ALK",
+                "Carcinoma medular renal con deficiencia de SMARCB1",
+                "Carcinoma de células renales, subtipo pendiente de estudios adicionales",
+                "Oncocitoma renal",
+                "Angiomiolipoma",
+                "Angiomiolipoma epitelioide",
+                "Otro tipo histológico no listado (especificar)"
+              ],
+              "description": "Sinónimos: papilar de células claras → Tumor… papilar de células claras; multilocular quístico → Neoplasia… multilocular; Xp11 → TFE3; t(6;11) → TFEB; inclasificable → SAI; papilar tipo 1/2 → papilar; HLRCC → FH; medular → SMARCB1; sarcomatoide puro → SAI. Oncocitoma o angiomiolipoma (y epitelioide): su opción. Urotelial, Wilms o metástasis de otro cáncer → Otro no listado; de CCR, su subtipo."
+            }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Grado Histológico (OMS / ISUP)",
+          "type": "coded",
+          "options": [
+            "G1, nucléolos ausentes o inconspicuos a 400x",
+            "G2, nucléolos conspicuos y visibles a 400x, no prominentes a 100x",
+            "G3, nucléolos conspicuos a 100x",
+            "G4, pleomorfismo nuclear extremo y/o células gigantes multinucleadas y/o diferenciación rabdoide y/o sarcomatoide",
+            "GX, no puede evaluarse",
+            "No aplica"
+          ],
+          "description": "Grado OMS/ISUP (nucleolar) del área de mayor grado. Si el informe da «grado nuclear de Fuhrman N» o un grado sin sistema, marcar igual GN; la cita conserva la palabra «Fuhrman» y el sistema va además en «Sistema de Gradación Nuclear». «No aplica» solo si el informe lo declara (típico en cromófobo); «GX» si dice que no puede evaluarse."
+        },
+        {
+          "id": 304,
+          "name": "Características Rabdoides",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente",
+            "No puede determinarse (explicar)"
+          ],
+          "children": [
+            {
+              "id": 30401,
+              "name": "Porcentaje de componente rabdoide (%)",
+              "type": "number",
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": 305,
+          "name": "Características Sarcomatoides",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente",
+            "No puede determinarse (explicar)"
+          ],
+          "children": [
+            {
+              "id": 30501,
+              "name": "Porcentaje de componente sarcomatoide (%)",
+              "type": "number",
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": 306,
+          "name": "Necrosis Tumoral",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente",
+            "No puede determinarse (explicar)"
+          ],
+          "children": [
+            {
+              "id": 30601,
+              "name": "Porcentaje de necrosis tumoral (%)",
+              "type": "number",
+              "unit": "%"
+            }
+          ]
+        },
+        {
+          "id": 307,
+          "name": "Invasión Linfática y/o Vascular de Vasos Pequeños (excluye vena renal y vena cava)",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente",
+            "No puede determinarse (explicar)"
+          ],
+          "description": "Invasión de vasos linfáticos o venosos pequeños (linfovascular). Excluye vena renal, sus ramas segmentarias y vena cava: el trombo o la invasión de esos vasos va en Extensión Tumoral, no aquí. Si el informe dice solo «invasión vascular/linfovascular» sin nombrar esos vasos, marcar aquí."
+        },
+        {
+          "id": 308,
+          "name": "Focalidad del Tumor",
+          "type": "coded",
+          "options": [
+            "Unifocal",
+            "Multifocal (especificar número de tumores)"
+          ],
+          "children": [
+            {
+              "id": 30801,
+              "name": "Número de tumores",
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "id": 309,
+          "name": "Tamaño del Tumor",
+          "type": "group",
+          "children": [
+            {
+              "id": 30901,
+              "name": "Dimensión mayor (cm)",
+              "type": "number",
+              "unit": "cm",
+              "description": "Dimensión mayor del tumor más grande, en cm (convertir mm a cm). Si hay varios tumores, los demás van en «Dimensión mayor de otro(s) tumor(es)». No usar el largo de los cilindros de una biopsia."
+            },
+            {
+              "id": 30902,
+              "name": "Dimensión mayor de otro(s) tumor(es)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "id": 310,
+          "name": "Extensión Tumoral",
+          "type": "coded_multiple",
+          "options": [
+            "Limitado al riñón",
+            "Se extiende al tejido perirrenal (más allá de la cápsula renal)",
+            "Se extiende al seno renal",
+            "Se extiende al sistema pielocalicial",
+            "Se extiende a la vena renal o sus ramas segmentarias",
+            "Se extiende a la vena cava inferior",
+            "Se extiende más allá de la fascia de Gerota (fascia renal)",
+            "Invade directamente la glándula suprarrenal (T4)",
+            "Compromete la glándula suprarrenal en forma no contigua (M1)",
+            "Se extiende a otro(s) órgano(s) / estructura(s) (especificar)",
+            "No puede determinarse (explicar)"
+          ],
+          "description": "Extensión en la nefrectomía; marcar todas las que apliquen. Cápsula renal comprometida sin grasa perirrenal = «Limitado al riñón» (no es pT3a). Seno renal: tumor en contacto con la grasa del seno, en su tejido conectivo laxo o en sus vasos. Suprarrenal por contigüidad = T4; nódulo separado = M1."
+        },
+        {
+          "id": 312,
+          "name": "Invasión Perineural",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente",
+            "No puede determinarse"
+          ],
+          "description": "Invasión de nervios por el tumor. No es un elemento del CAP de riñón: marcar solo si el informe lo declara explícitamente."
+        },
+        {
+          "id": 313,
+          "name": "Efecto del Tratamiento Neoadyuvante",
+          "type": "coded",
+          "options": [
+            "Sin tratamiento previo conocido",
+            "Sin células tumorales viables (respuesta completa)",
+            "Células tumorales aisladas o pequeños grupos (respuesta casi completa)",
+            "Carcinoma residual con regresión evidente (respuesta parcial)",
+            "Carcinoma residual extenso sin regresión evidente (respuesta pobre o nula)",
+            "No puede determinarse"
+          ],
+          "description": "Respuesta del tumor en la pieza tras tratamiento previo a la cirugía (sistémico, radioterapia o embolización), solo si el informe la describe: sin tumor viable, células aisladas, regresión parcial o sin regresión. «Sin tratamiento previo conocido» solo si el informe lo afirma. No inferir del prefijo y (7.1) ni de la necrosis. No es la respuesta clínica ni radiológica."
+        },
+        {
+          "id": 314,
+          "name": "Sistema de Gradación Nuclear",
+          "type": "coded",
+          "options": [
+            "OMS/ISUP",
+            "Fuhrman",
+            "Otro sistema de gradación",
+            "No especificado"
+          ],
+          "description": "Sistema que nombra el informe al dar el grado: citar la palabra («OMS/ISUP», «ISUP», «Fuhrman»). «No especificado»: grado sin sistema («grado nuclear 2»). Gradación propia del cromófobo u otra → «Otro sistema de gradación». El valor del grado va en Grado Histológico (3.3), con la misma cita."
+        },
+        {
+          "id": 315,
+          "name": "Respuesta Linfocitaria Peritumoral",
+          "type": "coded",
+          "options": [
+            "No identificada",
+            "Presente, sin graduar",
+            "Leve",
+            "Moderada",
+            "Intensa",
+            "No puede determinarse"
+          ],
+          "description": "Infiltrado linfocitario asociado al tumor (peritumoral o intratumoral), solo si el informe lo describe; no es elemento del CAP de riñón. Elegir la intensidad escrita; sin intensidad → «Presente, sin graduar». No es la inflamación del riñón no tumoral (Hallazgos adicionales) ni un linfoma."
+        },
+        {
+          "id": 316,
+          "name": "Grado de Diferenciación (R2BO)",
+          "type": "coded",
+          "options": [
+            "Grado I, bien diferenciado",
+            "Grado II, moderadamente diferenciado",
+            "Grado III, poco diferenciado",
+            "Grado IV, indiferenciado o anaplásico",
+            "No determinado o no procede"
+          ],
+          "description": "Solo si el informe gradúa por DIFERENCIACIÓN con esas palabras (bien, moderadamente o poco diferenciado; indiferenciado o anaplásico). El grado nuclear OMS/ISUP o Fuhrman va en 3.3 y no se copia aquí. «No determinado o no procede» solo si el informe lo dice."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Márgenes",
+      "type": "section",
+      "fields": [
+        {
+          "id": 401,
+          "name": "Estado de los Márgenes",
+          "type": "coded",
+          "options": [
+            "Todos los márgenes negativos para carcinoma invasivo",
+            "Carcinoma invasivo presente en el margen",
+            "Otro (especificar)",
+            "No puede determinarse (explicar)",
+            "No aplica"
+          ],
+          "description": "Estado global de los márgenes quirúrgicos de la nefrectomía (las biopsias no tienen márgenes). Un tumor libre en la luz de la vena renal, no adherido a la pared en el margen, cuenta como margen negativo."
+        },
+        {
+          "id": 402,
+          "name": "Margen(es) Comprometido(s) por Carcinoma Invasivo",
+          "type": "coded_multiple",
+          "options": [
+            "Parénquima renal",
+            "Cápsula renal",
+            "Tejido blando del seno renal",
+            "Tejido blando del hilio renal",
+            "Vena renal (el tumor invade o está adherido a la pared de la vena en el margen)",
+            "Ureteral",
+            "Grasa perirrenal",
+            "Fascia de Gerota",
+            "Otro (especificar)",
+            "No puede determinarse (explicar)"
+          ],
+          "description": "Márgenes alcanzados por el carcinoma cuando el estado es «presente en el margen»; marcar todos los que apliquen. Parénquima renal, cápsula renal y tejido blando del seno renal son márgenes de la nefrectomía parcial."
+        },
+        {
+          "id": 404,
+          "name": "Distancia del tumor al margen quirúrgico más cercano (mm)",
+          "type": "number",
+          "unit": "mm",
+          "description": "Distancia entre el carcinoma y el margen quirúrgico más cercano, típica de la nefrectomía parcial. Citar el número tal como viene, con su calificador y su unidad («2 mm», «< 1 mm», «0,5 cm»); la unidad del campo es mm. No marcar si el margen está comprometido."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ganglios Linfáticos Regionales",
+      "type": "section",
+      "fields": [
+        {
+          "id": 501,
+          "name": "Estado de los Ganglios Linfáticos Regionales",
+          "type": "coded",
+          "options": [
+            "No aplica (sin ganglios linfáticos regionales enviados o encontrados)",
+            "Ganglios linfáticos regionales presentes"
+          ],
+          "children": [
+            {
+              "id": 50101,
+              "name": "Compromiso de Ganglios Linfáticos Regionales",
+              "type": "coded",
+              "options": [
+                "Todos los ganglios linfáticos regionales negativos para tumor",
+                "Tumor presente en ganglio(s) linfático(s) regional(es)",
+                "Otro (especificar)",
+                "No puede determinarse (explicar)"
+              ],
+              "children": [
+                {
+                  "id": 5010103,
+                  "name": "Ganglios Linfáticos con Tumor",
+                  "type": "group",
+                  "children": [
+                    {
+                      "id": 501010302,
+                      "name": "Número de ganglios linfáticos con tumor",
+                      "type": "number",
+                      "description": "Citar el número tal como viene, con su calificador y su unidad («12», «al menos 12», «> 1 cm», «< 1 mm»). Si el informe dice que no se puede determinar, citar esa frase aquí."
+                    }
+                  ]
+                },
+                {
+                  "id": 5010104,
+                  "name": "Sitio(s) Ganglionar(es) con Tumor",
+                  "type": "coded_multiple",
+                  "options": [
+                    "Hiliar",
+                    "Precavo",
+                    "Interaortocavo",
+                    "Paracavo",
+                    "Retrocavo",
+                    "Preaórtico",
+                    "Paraaórtico",
+                    "Retroaórtico",
+                    "Otro (especificar)"
+                  ]
+                },
+                {
+                  "id": 5010105,
+                  "name": "Mayor Depósito Metastásico Ganglionar",
+                  "type": "group",
+                  "children": [
+                    {
+                      "id": 501010502,
+                      "name": "Tamaño del mayor depósito metastásico ganglionar (cm)",
+                      "type": "number",
+                      "unit": "cm",
+                      "description": "Citar el número tal como viene, con su calificador y su unidad («12», «al menos 12», «> 1 cm», «< 1 mm»). Si el informe dice que no se puede determinar, citar esa frase aquí."
+                    },
+                    {
+                      "id": 501010505,
+                      "name": "Sitio ganglionar con el mayor depósito metastásico",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "id": 5010106,
+                  "name": "Extensión Extraganglionar (ENE)",
+                  "type": "coded",
+                  "options": [
+                    "No identificada",
+                    "Presente",
+                    "No puede determinarse (explicar)"
+                  ],
+                  "children": [
+                    {
+                      "id": 501010601,
+                      "name": "Ubicación de los ganglios con extensión extraganglionar",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 50102,
+              "name": "Ganglios Linfáticos Examinados",
+              "type": "group",
+              "children": [
+                {
+                  "id": 5010202,
+                  "name": "Número de ganglios linfáticos examinados",
+                  "type": "number",
+                  "description": "Citar el número tal como viene, con su calificador y su unidad («12», «al menos 12», «> 1 cm», «< 1 mm»). Si el informe dice que no se puede determinar, citar esa frase aquí."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Metástasis a Distancia",
+      "type": "section",
+      "fields": [
+        {
+          "id": 601,
+          "name": "Sitios Distantes Comprometidos",
+          "type": "coded_multiple",
+          "options": [
+            "No aplica",
+            "Pulmón",
+            "Hueso",
+            "Hígado",
+            "Cerebro",
+            "Glándula suprarrenal contralateral",
+            "Glándula suprarrenal ipsilateral (no contigua)",
+            "Riñón contralateral",
+            "Páncreas",
+            "Ganglio(s) linfático(s) no regional(es)",
+            "Otro (especificar)",
+            "No puede determinarse (explicar)"
+          ],
+          "description": "Sitios con metástasis a distancia que declara la nota, confirmadas por patología o por imágenes; marcar todos. La suprarrenal del mismo lado no contigua va aquí y también en Extensión Tumoral. Si la muestra es de una metástasis, ese sitio va aquí y en «Sitio de la muestra». Ganglio no regional = fuera de hiliares, cavos y aórticos."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Clasificación pTNM (AJCC 8va Ed.)",
+      "type": "section",
+      "fields": [
+        {
+          "id": 701,
+          "name": "Clasificación Modificada",
+          "type": "coded_multiple",
+          "options": [
+            "No aplica",
+            "y (post-terapia neoadyuvante)",
+            "r (recurrencia)"
+          ]
+        },
+        {
+          "id": 702,
+          "name": "Categoría pT",
+          "type": "coded",
+          "options": [
+            "pT no asignado (no puede determinarse con la información patológica disponible)",
+            "pT0",
+            "pT1a",
+            "pT1b",
+            "pT1 (subcategoría no puede determinarse)",
+            "pT2a",
+            "pT2b",
+            "pT2 (subcategoría no puede determinarse)",
+            "pT3a",
+            "pT3b",
+            "pT3c",
+            "pT3 (subcategoría no puede determinarse)",
+            "pT4"
+          ],
+          "description": "pT declarado en el informe; pTX = «pT no asignado». Guía: pT1a ≤4 cm; pT1b >4–7; pT2a >7–10; pT2b >10, limitados al riñón; pT3a vena renal, sistema pielocalicial o grasa perirrenal o del seno; pT3b cava bajo el diafragma; pT3c cava sobre el diafragma o pared de la cava; pT4 más allá de Gerota o suprarrenal contigua."
+        },
+        {
+          "id": 703,
+          "name": "Sufijo T",
+          "type": "coded",
+          "options": [
+            "No aplica",
+            "(m) múltiples tumores primarios sincrónicos en un solo órgano"
+          ]
+        },
+        {
+          "id": 704,
+          "name": "Categoría pN",
+          "type": "coded",
+          "options": [
+            "pN no asignado (sin ganglios enviados o encontrados)",
+            "pN no asignado (no puede determinarse con la información patológica disponible)",
+            "pN0",
+            "pN1"
+          ],
+          "description": "pNX/Nx sin ganglios en la muestra (lo habitual en nefrectomía) → «pN no asignado (sin ganglios enviados o encontrados)». La otra opción «no asignado» solo si hay ganglios que no pudieron evaluarse. pN1 = metástasis en ganglio regional."
+        },
+        {
+          "id": 705,
+          "name": "Categoría pM",
+          "type": "coded",
+          "options": [
+            "No aplica - pM no puede determinarse a partir del/los espécimen(es) enviado(s)",
+            "pM1"
+          ],
+          "description": "pMX, pM0 o cM0 escritos en el informe → «No aplica - pM no puede determinarse…» (pM0 no existe como categoría patológica). pM1 = metástasis a distancia confirmada, incluido el compromiso no contiguo de la suprarrenal."
+        },
+        {
+          "id": 706,
+          "name": "Grupo de Estadio Patológico (AJCC)",
+          "type": "coded",
+          "options": [
+            "Estadio I",
+            "Estadio II",
+            "Estadio III",
+            "Estadio IV"
+          ],
+          "description": "Grupo de estadio AJCC 8 patológico que declara el informe. Riñón: I = pT1 N0 M0; II = pT2 N0 M0; III = pT3 o N1, M0; IV = pT4 o M1. No inferirlo de las categorías si no está escrito. Un estadio clínico de una nota de oncología no va aquí (usar Extensión diagnóstico)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Hallazgos Adicionales",
+      "type": "section",
+      "fields": [
+        {
+          "id": 801,
+          "name": "Hallazgos Adicionales en el Riñón",
+          "type": "coded_multiple",
+          "options": [
+            "Tejido insuficiente",
+            "Sin cambios patológicos significativos",
+            "Enfermedad glomerular (especificar tipo)",
+            "Enfermedad tubulointersticial (especificar tipo)",
+            "Enfermedad vascular (especificar tipo)",
+            "Quiste(s) (especificar tipo)",
+            "Adenoma(s) papilar(es)",
+            "Otro (especificar)"
+          ],
+          "description": "Hallazgos del riñón NO tumoral (enfermedad renal médica, quistes, adenomas papilares); marcar todos los que apliquen. «Tejido insuficiente» = parénquima no neoplásico insuficiente para evaluarlo. Una biopsia no diagnóstica de la lesión va en «Muestra no diagnóstica o no concluyente», no aquí."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Comentarios",
+      "type": "section",
+      "fields": [
+        {
+          "id": 901,
+          "name": "Comentarios",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Comportamiento",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1001,
+          "name": "Comportamiento",
+          "type": "coded",
+          "options": [
+            "Neoplasias benignas",
+            "Neoplasias de comportamiento incierto y desconocido",
+            "Neoplasias in situ",
+            "Neoplasias malignas de localización primaria",
+            "Neoplasias malignas de localización secundaria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Extensión diagnóstico",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1101,
+          "name": "Extensión diagnóstico",
+          "type": "coded",
+          "options": [
+            "Local",
+            "Localmente avanzado",
+            "Regional",
+            "Avanzado",
+            "Desconocido"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Inmunohistoquímica y Biomarcadores",
+      "type": "section",
+      "fields": [
+        {
+          "id": 1201,
+          "name": "PAX8",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para PAX8 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1202,
+          "name": "Anhidrasa carbónica IX (CA IX)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para Anhidrasa carbónica IX (CA IX) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1203,
+          "name": "CK7",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para CK7 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1204,
+          "name": "CD117 (c-KIT)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para CD117 (c-KIT) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1205,
+          "name": "CD10",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para CD10 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1206,
+          "name": "Vimentina",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para Vimentina en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1207,
+          "name": "AMACR (racemasa, P504S)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para AMACR (racemasa, P504S) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1208,
+          "name": "Pancitoqueratina (AE1/AE3, CAM 5.2)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para Pancitoqueratina (AE1/AE3, CAM 5.2) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1209,
+          "name": "HMB-45",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para HMB-45 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1210,
+          "name": "TFE3",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para TFE3 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1211,
+          "name": "Otros marcadores (marcador y resultado)",
+          "type": "text",
+          "description": "Marcadores o estudios sin campo propio en esta sección, con su resultado tal como los escribe el informe (p. ej., GATA3+, p63−, CK5/6−, PD-L1 22C3 TPS 5 %, variante de significado incierto en BAP1). Lo que tiene campo propio no se repite aquí."
+        },
+        {
+          "id": 1212,
+          "name": "EMA (antígeno de membrana epitelial)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para EMA (antígeno de membrana epitelial, MUC1) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1213,
+          "name": "Proteína S100",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para la proteína S100 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1214,
+          "name": "TTF-1",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para TTF-1 (NKX2-1) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1215,
+          "name": "Actina de músculo liso (SMA)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para actina de músculo liso en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así. «Actina» sin especificar o actina músculo específica (HHF35) también aquí."
+        },
+        {
+          "id": 1216,
+          "name": "Desmina",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para desmina en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1217,
+          "name": "CD34",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para CD34 en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1218,
+          "name": "Catepsina K",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para catepsina K en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1219,
+          "name": "Melan-A (MART-1)",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para Melan-A (MART-1) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1220,
+          "name": "CK20",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para CK20 (citoqueratina 20) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1221,
+          "name": "GPNMB",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para GPNMB en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así."
+        },
+        {
+          "id": 1222,
+          "name": "TFEB por IHQ",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para TFEB en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así. Positivo = tinción nuclear. El FISH de TFEB va en Estudios Moleculares."
+        },
+        {
+          "id": 1223,
+          "name": "ALK por IHQ",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para ALK en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así. El FISH o la secuenciación de ALK van en Estudios Moleculares."
+        },
+        {
+          "id": 1224,
+          "name": "Fumarato hidratasa (FH) por IHQ",
+          "type": "coded",
+          "options": [
+            "Expresión conservada",
+            "Pérdida de expresión",
+            "No puede determinarse"
+          ],
+          "description": "Inmunohistoquímica para fumarato hidratasa (FH) en el tumor. «Pérdida de expresión» = ausencia de tinción citoplasmática en las células tumorales (con control interno teñido); tinción conservada, aunque sea focal, = «Expresión conservada», salvo que el informe la llame pérdida."
+        },
+        {
+          "id": 1225,
+          "name": "2-succinocisteína (2SC) por IHQ",
+          "type": "coded",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Equívoco o no concluyente"
+          ],
+          "description": "Resultado de la inmunohistoquímica para 2-succinocisteína (2SC) en el tumor. Positivo focal, parcial o débil = «Positivo». «Equívoco o no concluyente» solo si el informe lo dice así. Positivo apoya deficiencia de FH."
+        },
+        {
+          "id": 1226,
+          "name": "SDHB por IHQ",
+          "type": "coded",
+          "options": [
+            "Expresión conservada",
+            "Pérdida de expresión",
+            "No puede determinarse"
+          ],
+          "description": "Inmunohistoquímica para SDHB en el tumor. «Pérdida de expresión» = ausencia de tinción citoplasmática granular en las células tumorales (con control interno teñido); tinción conservada, aunque sea focal, = «Expresión conservada», salvo que el informe la llame pérdida."
+        },
+        {
+          "id": 1227,
+          "name": "SMARCB1 (INI1) por IHQ",
+          "type": "coded",
+          "options": [
+            "Expresión conservada",
+            "Pérdida de expresión",
+            "No puede determinarse"
+          ],
+          "description": "Inmunohistoquímica para SMARCB1 (INI1, BAF47) en el tumor. «Pérdida de expresión» = ausencia de tinción nuclear en las células tumorales (con control interno teñido); tinción conservada, aunque sea focal, = «Expresión conservada», salvo que el informe la llame pérdida."
+        },
+        {
+          "id": 1228,
+          "name": "Índice de proliferación Ki-67 (%)",
+          "type": "number",
+          "unit": "%",
+          "description": "Índice de proliferación Ki-67 (MIB-1) en el tumor. Citar el número tal como viene, con su calificador y su unidad («15 %», «< 1 %», «hasta 30 %»). No es el índice mitótico."
+        },
+        {
+          "id": 1229,
+          "name": "Estudios Moleculares",
+          "type": "group",
+          "description": "Resultados de FISH, secuenciación (NGS, Sanger) o PCR del tumor o germinales. La IHQ va en los campos de arriba.",
+          "children": [
+            {
+              "id": 122901,
+              "name": "Reordenamiento de TFE3 (FISH u otro método molecular)",
+              "type": "coded",
+              "options": [
+                "No se detecta reordenamiento",
+                "Reordenamiento detectado",
+                "No puede determinarse"
+              ],
+              "description": "Resultado del estudio molecular de TFE3 (FISH de separación, NGS o RT-PCR). Una fusión nombrada (p. ej., ASPSCR1::TFE3) = «Reordenamiento detectado». La IHQ de TFE3 va en 12.10, no aquí."
+            },
+            {
+              "id": 122902,
+              "name": "Alteración de TFEB (FISH u otro método molecular)",
+              "type": "coded",
+              "options": [
+                "No se detecta alteración",
+                "Reordenamiento detectado",
+                "Amplificación detectada",
+                "No puede determinarse"
+              ],
+              "description": "Resultado del estudio molecular de TFEB (FISH o NGS). Reordenamiento (t(6;11), MALAT1::TFEB) o amplificación de TFEB/6p21: su opción. La IHQ de TFEB va en «TFEB por IHQ»."
+            },
+            {
+              "id": 122903,
+              "name": "Reordenamiento de ALK (FISH u otro método molecular)",
+              "type": "coded",
+              "options": [
+                "No se detecta reordenamiento",
+                "Reordenamiento detectado",
+                "No puede determinarse"
+              ],
+              "description": "Resultado del estudio molecular de ALK (FISH, NGS o RT-PCR). Una fusión nombrada (p. ej., VCL::ALK) = «Reordenamiento detectado». La IHQ de ALK va en «ALK por IHQ»."
+            },
+            {
+              "id": 122904,
+              "name": "Resultado de la secuenciación o panel genético",
+              "type": "coded",
+              "options": [
+                "Sin variantes patogénicas detectadas",
+                "Variante(s) patogénica(s) detectada(s)",
+                "No puede determinarse"
+              ],
+              "description": "Resultado global de una secuenciación o panel génico, somático o germinal. Solo variantes de significado incierto → «Sin variantes patogénicas detectadas», y la variante va en «Otros marcadores». Los genes van en «Genes con variante patogénica»."
+            },
+            {
+              "id": 122905,
+              "name": "Genes con variante patogénica",
+              "type": "coded_multiple",
+              "options": [
+                "VHL",
+                "PBRM1",
+                "SETD2",
+                "BAP1",
+                "FH",
+                "SDHA",
+                "SDHB",
+                "SDHC",
+                "SDHD",
+                "ELOC (TCEB1)",
+                "TSC1",
+                "TSC2",
+                "FLCN",
+                "MET",
+                "SMARCB1",
+                "Otra variante"
+              ],
+              "description": "Genes con variante patogénica o probablemente patogénica informada; marcar todos. SDH sin subunidad o gen no listado → «Otra variante». No marcar por la IHQ: la pérdida de FH, SDHB o SMARCB1 por IHQ va en su campo de IHQ."
+            },
+            {
+              "id": 122906,
+              "name": "Origen de la variante",
+              "type": "coded",
+              "options": [
+                "Germinal",
+                "Somática",
+                "No especificado"
+              ],
+              "description": "Germinal (hereditaria; en sangre o saliva, o un síndrome confirmado: VHL, HLRCC, Birt-Hogg-Dubé, SDH, BAP1, TSC) o somática (solo en el tumor), según el informe. Sin dato → «No especificado»."
+            },
+            {
+              "id": 122907,
+              "name": "Método del estudio molecular",
+              "type": "coded_multiple",
+              "options": [
+                "FISH",
+                "Secuenciación de nueva generación (NGS)",
+                "PCR o RT-PCR",
+                "Secuenciación Sanger",
+                "Otro (especificar)"
+              ],
+              "description": "Técnica del estudio molecular; marcar todas. FISH de separación (break-apart) o de amplificación = FISH. Panel de secuenciación masiva = NGS. La inmunohistoquímica no va aquí."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

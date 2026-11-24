@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.out
+*.log
+.DS_Store
+# salidas generadas (pueden contener texto de notas: no se publican)
+validation/requests/
+validation/para_validacion/
+validation/validacion_ui/marcas/
+validation/validacion_ui/datos/
+validation/datos/
+validation/salidas/
+validation/transcripciones/
+validation/_clave/
+*.xlsx
+runs_*/
+datos_*/
+logs_hedging*/

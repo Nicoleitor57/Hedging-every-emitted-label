@@ -1,0 +1,1019 @@
+{
+    "1": {
+        "name": "Metadatos del Informe",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 12
+    },
+    "101": {
+        "name": "Fecha del informe",
+        "type": "date",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "102": {
+        "name": "ID Solicitud Origen",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "103": {
+        "name": "RUT Paciente",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "104": {
+        "name": "RUT Patólogo",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "105": {
+        "name": "Institución de origen (DEIS)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "106": {
+        "name": "RUT Médico Solicitante",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "107": {
+        "name": "Número de Biopsia",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "108": {
+        "name": "Ficha",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "109": {
+        "name": "Registro Clínico ID",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "110": {
+        "name": "Nombre Paciente",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "111": {
+        "name": "Nombre Patólogo",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "112": {
+        "name": "Hipótesis diagnóstica",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "2": {
+        "name": "Espécimen",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 5
+    },
+    "201": {
+        "name": "Procedimiento",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "202": {
+        "name": "Lateralidad del Espécimen",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "203": {
+        "name": "Muestra no diagnóstica o no concluyente",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "204": {
+        "name": "Sitio de la muestra (si no es el riñón)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "205": {
+        "name": "Tipo de espécimen",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "3": {
+        "name": "Tumor",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 15
+    },
+    "301": {
+        "name": "Sitio Tumoral",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "302": {
+        "name": "Tipo Histológico",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "30201": {
+        "name": "Tipo Histológico",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "303": {
+        "name": "Grado Histológico (OMS / ISUP)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "304": {
+        "name": "Características Rabdoides",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30401": {
+        "name": "Porcentaje de componente rabdoide (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "304",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "305": {
+        "name": "Características Sarcomatoides",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30501": {
+        "name": "Porcentaje de componente sarcomatoide (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "305",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "306": {
+        "name": "Necrosis Tumoral",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30601": {
+        "name": "Porcentaje de necrosis tumoral (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "307": {
+        "name": "Invasión Linfática y/o Vascular de Vasos Pequeños (excluye vena renal y vena cava)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "308": {
+        "name": "Focalidad del Tumor",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30801": {
+        "name": "Número de tumores",
+        "type": "number",
+        "depth": 3,
+        "parent": "308",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "309": {
+        "name": "Tamaño del Tumor",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 2
+    },
+    "30901": {
+        "name": "Dimensión mayor (cm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "309",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30902": {
+        "name": "Dimensión mayor de otro(s) tumor(es)",
+        "type": "text",
+        "depth": 3,
+        "parent": "309",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "310": {
+        "name": "Extensión Tumoral",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "312": {
+        "name": "Invasión Perineural",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "313": {
+        "name": "Efecto del Tratamiento Neoadyuvante",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "314": {
+        "name": "Sistema de Gradación Nuclear",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "315": {
+        "name": "Respuesta Linfocitaria Peritumoral",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "316": {
+        "name": "Grado de Diferenciación (R2BO)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "4": {
+        "name": "Márgenes",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "401": {
+        "name": "Estado de los Márgenes",
+        "type": "coded",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "402": {
+        "name": "Margen(es) Comprometido(s) por Carcinoma Invasivo",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "404": {
+        "name": "Distancia del tumor al margen quirúrgico más cercano (mm)",
+        "type": "number",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "5": {
+        "name": "Ganglios Linfáticos Regionales",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "501": {
+        "name": "Estado de los Ganglios Linfáticos Regionales",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "50101": {
+        "name": "Compromiso de Ganglios Linfáticos Regionales",
+        "type": "coded",
+        "depth": 3,
+        "parent": "501",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 4
+    },
+    "5010103": {
+        "name": "Ganglios Linfáticos con Tumor",
+        "type": "group",
+        "depth": 4,
+        "parent": "50101",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "501010302": {
+        "name": "Número de ganglios linfáticos con tumor",
+        "type": "number",
+        "depth": 5,
+        "parent": "5010103",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "5010104": {
+        "name": "Sitio(s) Ganglionar(es) con Tumor",
+        "type": "coded_multiple",
+        "depth": 4,
+        "parent": "50101",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "5010105": {
+        "name": "Mayor Depósito Metastásico Ganglionar",
+        "type": "group",
+        "depth": 4,
+        "parent": "50101",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 2
+    },
+    "501010502": {
+        "name": "Tamaño del mayor depósito metastásico ganglionar (cm)",
+        "type": "number",
+        "depth": 5,
+        "parent": "5010105",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "501010505": {
+        "name": "Sitio ganglionar con el mayor depósito metastásico",
+        "type": "text",
+        "depth": 5,
+        "parent": "5010105",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "5010106": {
+        "name": "Extensión Extraganglionar (ENE)",
+        "type": "coded",
+        "depth": 4,
+        "parent": "50101",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "501010601": {
+        "name": "Ubicación de los ganglios con extensión extraganglionar",
+        "type": "text",
+        "depth": 5,
+        "parent": "5010106",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "50102": {
+        "name": "Ganglios Linfáticos Examinados",
+        "type": "group",
+        "depth": 3,
+        "parent": "501",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "5010202": {
+        "name": "Número de ganglios linfáticos examinados",
+        "type": "number",
+        "depth": 4,
+        "parent": "50102",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "6": {
+        "name": "Metástasis a Distancia",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "601": {
+        "name": "Sitios Distantes Comprometidos",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "6",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7": {
+        "name": "Clasificación pTNM (AJCC 8va Ed.)",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "701": {
+        "name": "Clasificación Modificada",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "702": {
+        "name": "Categoría pT",
+        "type": "coded",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "703": {
+        "name": "Sufijo T",
+        "type": "coded",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "704": {
+        "name": "Categoría pN",
+        "type": "coded",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "705": {
+        "name": "Categoría pM",
+        "type": "coded",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "706": {
+        "name": "Grupo de Estadio Patológico (AJCC)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8": {
+        "name": "Hallazgos Adicionales",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "801": {
+        "name": "Hallazgos Adicionales en el Riñón",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "8",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "9": {
+        "name": "Comentarios",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "901": {
+        "name": "Comentarios",
+        "type": "text",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "10": {
+        "name": "Comportamiento",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "1001": {
+        "name": "Comportamiento",
+        "type": "coded",
+        "depth": 2,
+        "parent": "10",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "11": {
+        "name": "Extensión diagnóstico",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "1101": {
+        "name": "Extensión diagnóstico",
+        "type": "coded",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "12": {
+        "name": "Inmunohistoquímica y Biomarcadores",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 29
+    },
+    "1201": {
+        "name": "PAX8",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1202": {
+        "name": "Anhidrasa carbónica IX (CA IX)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1203": {
+        "name": "CK7",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1204": {
+        "name": "CD117 (c-KIT)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1205": {
+        "name": "CD10",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1206": {
+        "name": "Vimentina",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1207": {
+        "name": "AMACR (racemasa, P504S)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1208": {
+        "name": "Pancitoqueratina (AE1/AE3, CAM 5.2)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1209": {
+        "name": "HMB-45",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1210": {
+        "name": "TFE3",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1211": {
+        "name": "Otros marcadores (marcador y resultado)",
+        "type": "text",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1212": {
+        "name": "EMA (antígeno de membrana epitelial)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1213": {
+        "name": "Proteína S100",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1214": {
+        "name": "TTF-1",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1215": {
+        "name": "Actina de músculo liso (SMA)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1216": {
+        "name": "Desmina",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1217": {
+        "name": "CD34",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1218": {
+        "name": "Catepsina K",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1219": {
+        "name": "Melan-A (MART-1)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1220": {
+        "name": "CK20",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1221": {
+        "name": "GPNMB",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1222": {
+        "name": "TFEB por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1223": {
+        "name": "ALK por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1224": {
+        "name": "Fumarato hidratasa (FH) por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1225": {
+        "name": "2-succinocisteína (2SC) por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1226": {
+        "name": "SDHB por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1227": {
+        "name": "SMARCB1 (INI1) por IHQ",
+        "type": "coded",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1228": {
+        "name": "Índice de proliferación Ki-67 (%)",
+        "type": "number",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1229": {
+        "name": "Estudios Moleculares",
+        "type": "group",
+        "depth": 2,
+        "parent": "12",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "122901": {
+        "name": "Reordenamiento de TFE3 (FISH u otro método molecular)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122902": {
+        "name": "Alteración de TFEB (FISH u otro método molecular)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122903": {
+        "name": "Reordenamiento de ALK (FISH u otro método molecular)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122904": {
+        "name": "Resultado de la secuenciación o panel genético",
+        "type": "coded",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122905": {
+        "name": "Genes con variante patogénica",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122906": {
+        "name": "Origen de la variante",
+        "type": "coded",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "122907": {
+        "name": "Método del estudio molecular",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "1229",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    }
+}

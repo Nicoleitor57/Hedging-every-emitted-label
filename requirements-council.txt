@@ -1,0 +1,5 @@
+# Council de LLM (etiquetado débil, scripts/01_etiquetado/etiquetar_council.slurm.sh): entorno aparte con GPU
+# (las corridas usaron Python 3.12). El labeller carga el modelo de spaCy al importarse:
+#   python -m spacy download es_core_news_sm
+vllm
+spacy

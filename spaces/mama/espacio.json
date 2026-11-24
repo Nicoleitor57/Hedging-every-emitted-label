@@ -1,0 +1,20 @@
+{
+ "nombre": "mama",
+ "corpus": "publico_mama_pub1",
+ "exclude_vids": [
+  "1201",
+  "1202",
+  "1301",
+  "1401"
+ ],
+ "archivos": {
+  "tree_241": "tree_dict_hier_mama.json",
+  "tree_206": "tree_dict_mama.json",
+  "remap": "tree_dict_hier_mama_remap.json",
+  "meta": "tree_dict_hier_mama_meta.json",
+  "edge_types": "edge_types_mama.json",
+  "adm_tree": "fallback_tree_mama.json",
+  "derivation": "derivation_map_mama.json",
+  "cooc": "multilabel_pairs_mama.json"
+ }
+}

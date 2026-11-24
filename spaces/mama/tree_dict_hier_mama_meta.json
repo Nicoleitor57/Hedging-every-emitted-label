@@ -1,0 +1,2207 @@
+{
+    "1": {
+        "name": "Metadatos del Informe",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 10
+    },
+    "101": {
+        "name": "Fecha del informe",
+        "type": "date",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "102": {
+        "name": "ID Solicitud Origen",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "103": {
+        "name": "RUT Paciente",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "104": {
+        "name": "RUT Patólogo",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "105": {
+        "name": "Institución de origen (DEIS)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "106": {
+        "name": "Número de Biopsia",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "107": {
+        "name": "Ficha",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "108": {
+        "name": "Registro Clínico ID",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "109": {
+        "name": "Nombre Paciente",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "110": {
+        "name": "Nombre Patólogo",
+        "type": "text",
+        "depth": 2,
+        "parent": "1",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "2": {
+        "name": "Espécimen",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "201": {
+        "name": "Procedimiento",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "20101": {
+        "name": "Especificar otro procedimiento",
+        "type": "text",
+        "depth": 3,
+        "parent": "201",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "202": {
+        "name": "Lateralidad del Espécimen",
+        "type": "coded",
+        "depth": 2,
+        "parent": "2",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "203": {
+        "name": "Sitio Tumoral (Localización Anatómica)",
+        "type": "group",
+        "depth": 2,
+        "parent": "2",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "20301": {
+        "name": "Cuadrante",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "203",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "20302": {
+        "name": "Posición Reloj",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "203",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "20303": {
+        "name": "Distancia al pezón (cm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "203",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "3": {
+        "name": "Hallazgos Invasivos",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 12
+    },
+    "301": {
+        "name": "Tipo Histológico",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 7
+    },
+    "30101": {
+        "name": "Patrón Morfológico Específico (para carcinoma invasivo de tipo no especial (ductal))",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30102": {
+        "name": "Patrón Variante (para carcinoma lobulillar invasivo)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30103": {
+        "name": "Tipos Histológicos Mixtos (especificar tipos y porcentajes de cada uno)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30104": {
+        "name": "Carcinoma Metaplásico Mixto (especificar tipos y porcentajes de cada uno)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30105": {
+        "name": "Carcinoma Metaplásico Otro Tipo (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30106": {
+        "name": "Carcinoma Invasivo con Características de (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30107": {
+        "name": "Otro Tipo Histológico No Listado (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "301",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "302": {
+        "name": "Grado Histológico (Nottingham)",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 5
+    },
+    "30201": {
+        "name": "Aplicabilidad del Grado",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30202": {
+        "name": "Diferenciación Glandular/Tubular",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30203": {
+        "name": "Pleomorfismo Nuclear",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30204": {
+        "name": "Tasa Mitótica",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30205": {
+        "name": "Grado Total",
+        "type": "coded",
+        "depth": 3,
+        "parent": "302",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "303": {
+        "name": "Tamaño del Tumor",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "30301": {
+        "name": "Estado del tamaño",
+        "type": "coded",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30302": {
+        "name": "Dimensión mayor del foco invasivo (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30303": {
+        "name": "Calificador de distancia",
+        "type": "coded",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30304": {
+        "name": "Segunda dimensión (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30305": {
+        "name": "Tercera dimensión (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30306": {
+        "name": "Dimensiones completas (texto exacto)",
+        "type": "text",
+        "depth": 3,
+        "parent": "303",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30307": {
+        "name": "Foco mayor en biopsia (solo espécimen biopsia)",
+        "type": "group",
+        "depth": 3,
+        "parent": "303",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 2
+    },
+    "3030701": {
+        "name": "Tamaño foco mayor en biopsia (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "30307",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "3030702": {
+        "name": "Calificador",
+        "type": "coded",
+        "depth": 4,
+        "parent": "30307",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "304": {
+        "name": "Focalidad Tumoral",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 4
+    },
+    "30401": {
+        "name": "Focalidad",
+        "type": "coded",
+        "depth": 3,
+        "parent": "304",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "3040101": {
+        "name": "Característica Multifocal",
+        "type": "coded",
+        "depth": 4,
+        "parent": "30401",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "3040102": {
+        "name": "Otra característica / No se puede determinar",
+        "type": "text",
+        "depth": 4,
+        "parent": "30401",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30402": {
+        "name": "Número de focos (calificador)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "304",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30403": {
+        "name": "Número de focos (valor)",
+        "type": "number",
+        "depth": 3,
+        "parent": "304",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "30404": {
+        "name": "Tamaños focos individuales (mm, separados por ;)",
+        "type": "text",
+        "depth": 3,
+        "parent": "304",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "305": {
+        "name": "Invasión Linfática",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30501": {
+        "name": "Especificación del otro tipo de invasión linfática",
+        "type": "text",
+        "depth": 3,
+        "parent": "305",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "306": {
+        "name": "Invasión Vascular",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30601": {
+        "name": "Especificación del otro tipo de invasión vascular",
+        "type": "text",
+        "depth": 3,
+        "parent": "306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "307": {
+        "name": "Invasión Linfovascular",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30701": {
+        "name": "Especificación del otro tipo de invasión linfovascular",
+        "type": "text",
+        "depth": 3,
+        "parent": "307",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "308": {
+        "name": "Invasión Linfática Dérmica",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30801": {
+        "name": "Especificación del otro tipo de invasión linfática dérmica",
+        "type": "text",
+        "depth": 3,
+        "parent": "308",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "309": {
+        "name": "Invasión Vascular Dérmica",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "30901": {
+        "name": "Especificación del otro tipo de invasión vascular dérmica",
+        "type": "text",
+        "depth": 3,
+        "parent": "309",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "310": {
+        "name": "Invasión Linfovascular Dérmica",
+        "type": "coded",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "31001": {
+        "name": "Especificación del otro tipo de invasión linfovascular dérmica",
+        "type": "text",
+        "depth": 3,
+        "parent": "310",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "311": {
+        "name": "Extensión Tumoral",
+        "type": "group",
+        "depth": 2,
+        "parent": "3",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 5
+    },
+    "31101": {
+        "name": "Estado de extensión",
+        "type": "coded",
+        "depth": 3,
+        "parent": "311",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "31102": {
+        "name": "Estado pezón",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "311",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "3110201": {
+        "name": "Especificación del estado del pezón (otro/no se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "31102",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "31103": {
+        "name": "Invasión de piel (tipo)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "311",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "3110301": {
+        "name": "Especificación del tipo de invasión de piel (otro/no se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "31103",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "31104": {
+        "name": "Focos satélite de piel",
+        "type": "coded",
+        "depth": 3,
+        "parent": "311",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "31105": {
+        "name": "Músculo esquelético (extensión)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "311",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "3110501": {
+        "name": "Especificación del tipo de invasión de músculo esquelético (otro/no se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "31105",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "312": {
+        "name": "Microcalcificaciones",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "3",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "31201": {
+        "name": "Especificación del otro tipo de microcalcificación",
+        "type": "text",
+        "depth": 3,
+        "parent": "312",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "4": {
+        "name": "Hallazgos In Situ (CDIS)",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 8
+    },
+    "401": {
+        "name": "Presencia CDIS",
+        "type": "coded",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "402": {
+        "name": "Tipo Histológico CDIS",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "40201": {
+        "name": "Otro tipo histológico in situ (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "402",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "403": {
+        "name": "Componente Intraductal Extenso (EIC)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "404": {
+        "name": "Patrones Arquitectónicos CDIS",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "40401": {
+        "name": "Otro patrón arquitectónico (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "404",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "405": {
+        "name": "Grado Nuclear CDIS",
+        "type": "coded",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "40501": {
+        "name": "Otro grado nuclear CDIS (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "405",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40502": {
+        "name": "Comentario del grado nuclear CDIS",
+        "type": "text",
+        "depth": 3,
+        "parent": "405",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "406": {
+        "name": "Necrosis CDIS",
+        "type": "coded",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "40601": {
+        "name": "Otro tipo de Necrosis CDIS (especificar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "406",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40602": {
+        "name": "Explicación 'No puede determinarse Necrosis CDIS'",
+        "type": "text",
+        "depth": 3,
+        "parent": "406",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "407": {
+        "name": "Tamaño/Extensión del CDIS",
+        "type": "group",
+        "depth": 2,
+        "parent": "4",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "40701": {
+        "name": "Estado tamaño CDIS",
+        "type": "coded",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40702": {
+        "name": "Dimensión mayor estimada CDIS (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40703": {
+        "name": "Segunda dimensión CDIS (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40704": {
+        "name": "Dimensiones completas CDIS (texto)",
+        "type": "text",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40705": {
+        "name": "Número de bloques con CDIS",
+        "type": "number",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40706": {
+        "name": "Número de bloques examinados",
+        "type": "number",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40707": {
+        "name": "Extensión del CDIS",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "407",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "4070701": {
+        "name": "Especificar CDIS como % del tumor entero",
+        "type": "number",
+        "depth": 4,
+        "parent": "40707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "4070702": {
+        "name": "Especificar extensión del CDIS (otro/no se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "40707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "408": {
+        "name": "Carcinoma Lobulillar In Situ (CLIS)",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "4",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 3
+    },
+    "40801": {
+        "name": "Especificar otro tipo de CLIS",
+        "type": "text",
+        "depth": 3,
+        "parent": "408",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40802": {
+        "name": "Extensión CLIS",
+        "type": "text",
+        "depth": 3,
+        "parent": "408",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "40803": {
+        "name": "Comentario CLIS",
+        "type": "text",
+        "depth": 3,
+        "parent": "408",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "5": {
+        "name": "Hallazgos Filoides",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "501": {
+        "name": "Tipo Histológico Filoides",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "502": {
+        "name": "Celularidad Estromal",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "503": {
+        "name": "Atipia Estromal",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "504": {
+        "name": "Sobrecrecimiento estromal",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "505": {
+        "name": "Tasa Mitótica",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "50501": {
+        "name": "Número de mitosis por 10 campos de gran aumento",
+        "type": "number",
+        "depth": 3,
+        "parent": "505",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "50502": {
+        "name": "Número de mitosis por milímetro cuadrado",
+        "type": "number",
+        "depth": 3,
+        "parent": "505",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "506": {
+        "name": "Borde tumoral histológico",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "507": {
+        "name": "Elementos heterólogos malignos",
+        "type": "coded",
+        "depth": 2,
+        "parent": "5",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "50701": {
+        "name": "Especificación Elemento heterólogo maligno (otro)",
+        "type": "text",
+        "depth": 3,
+        "parent": "507",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "6": {
+        "name": "Efectos del Tratamiento y RCB",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "601": {
+        "name": "Efecto en la Mama",
+        "type": "coded",
+        "depth": 2,
+        "parent": "6",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "60101": {
+        "name": "Especificación efecto en la mama (otro/no se puede determinar)",
+        "type": "text",
+        "depth": 3,
+        "parent": "601",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "602": {
+        "name": "Efecto en los Ganglios",
+        "type": "coded",
+        "depth": 2,
+        "parent": "6",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "603": {
+        "name": "Parámetros RCB",
+        "type": "group",
+        "depth": 2,
+        "parent": "6",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 9
+    },
+    "60301": {
+        "name": "Dimensión mayor lecho tumoral primario (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60302": {
+        "name": "Segunda dimensión mayor (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60303": {
+        "name": "Dimensiones completas lecho tumoral (texto)",
+        "type": "text",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60304": {
+        "name": "Celularidad general del cáncer (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60305": {
+        "name": "Porcentaje de cáncer In Situ (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60306": {
+        "name": "Número de ganglios positivos",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60307": {
+        "name": "Diámetro mayor metástasis nodal (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60308": {
+        "name": "Score RCB numérico",
+        "type": "number",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "60309": {
+        "name": "Clase RCB",
+        "type": "coded",
+        "depth": 3,
+        "parent": "603",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7": {
+        "name": "Biomarcadores",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "701": {
+        "name": "Espécimen/Bloque Testado",
+        "type": "text",
+        "depth": 2,
+        "parent": "7",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "702": {
+        "name": "Receptor Estrógeno (RE)",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "70201": {
+        "name": "Estado RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "702",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70202": {
+        "name": "Porcentaje células positivas RE (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "702",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70203": {
+        "name": "Rango porcentaje RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "702",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70204": {
+        "name": "Intensidad promedio de tinción RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "702",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70205": {
+        "name": "Estado controles internos RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "702",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70206": {
+        "name": "Allred RE (proporción / intensidad / total)",
+        "type": "group",
+        "depth": 3,
+        "parent": "702",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "7020601": {
+        "name": "Proporción Allred",
+        "type": "number",
+        "depth": 4,
+        "parent": "70206",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7020602": {
+        "name": "Intensidad Allred",
+        "type": "number",
+        "depth": 4,
+        "parent": "70206",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7020603": {
+        "name": "Total Allred",
+        "type": "number",
+        "depth": 4,
+        "parent": "70206",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "703": {
+        "name": "Receptor Progesterona (RP / PgR)",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 5
+    },
+    "70301": {
+        "name": "Estado RP",
+        "type": "coded",
+        "depth": 3,
+        "parent": "703",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70302": {
+        "name": "Porcentaje células positivas RP (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "703",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70303": {
+        "name": "Rango porcentaje RP",
+        "type": "coded",
+        "depth": 3,
+        "parent": "703",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70304": {
+        "name": "Intensidad promedio de tinción RP",
+        "type": "coded",
+        "depth": 3,
+        "parent": "703",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70305": {
+        "name": "Estado controles internos RP",
+        "type": "coded",
+        "depth": 3,
+        "parent": "703",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "704": {
+        "name": "HER2 por Inmunohistoquímica (IHC)",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 4
+    },
+    "70401": {
+        "name": "Score HER2 IHC",
+        "type": "coded",
+        "depth": 3,
+        "parent": "704",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70402": {
+        "name": "Patrón Score 0 (sub-categoría ultralow)",
+        "type": "coded",
+        "depth": 3,
+        "parent": "704",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70403": {
+        "name": "Porcentaje células tinción completa intensa (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "704",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70404": {
+        "name": "Heterogeneidad clonal (clustered)",
+        "type": "group",
+        "depth": 3,
+        "parent": "704",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 3
+    },
+    "7040401": {
+        "name": "Heterogeneidad clonal presente",
+        "type": "coded",
+        "depth": 4,
+        "parent": "70404",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7040402": {
+        "name": "Porcentaje cáncer con tinción 3+ (%)",
+        "type": "number",
+        "depth": 4,
+        "parent": "70404",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "7040403": {
+        "name": "Score en áreas no-3+",
+        "type": "coded",
+        "depth": 4,
+        "parent": "70404",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "705": {
+        "name": "HER2 por Hibridación In Situ (ISH)",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "70501": {
+        "name": "Resultado ISH",
+        "type": "coded",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "7050101": {
+        "name": "Especificación resultado ISH (no se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "70501",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70502": {
+        "name": "Promedio señales HER2 por célula",
+        "type": "number",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70503": {
+        "name": "Promedio señales CEP17 por célula",
+        "type": "number",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70504": {
+        "name": "Ratio HER2/CEP17",
+        "type": "number",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70505": {
+        "name": "Número de observadores",
+        "type": "number",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70506": {
+        "name": "Número de células tumorales invasivas contadas",
+        "type": "number",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70507": {
+        "name": "Resultado FISH HER2",
+        "type": "coded",
+        "depth": 3,
+        "parent": "705",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "706": {
+        "name": "Ki-67 Índice Proliferativo",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 2
+    },
+    "70601": {
+        "name": "Ki-67 porcentaje exacto (%)",
+        "type": "number",
+        "depth": 3,
+        "parent": "706",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70602": {
+        "name": "Ki-67 por rango",
+        "type": "coded",
+        "depth": 3,
+        "parent": "706",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "707": {
+        "name": "Pre-análisis y Metodología",
+        "type": "group",
+        "depth": 2,
+        "parent": "7",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 11
+    },
+    "70701": {
+        "name": "Tiempo isquemia fría",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70702": {
+        "name": "Tiempo isquemia fría (minutos)",
+        "type": "number",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70703": {
+        "name": "Tiempo de fijación (horas)",
+        "type": "number",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70704": {
+        "name": "Fijador",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70705": {
+        "name": "Tipo de test RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70706": {
+        "name": "Anticuerpo primario RE",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70707": {
+        "name": "Anticuerpo primario RP",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70708": {
+        "name": "Tipo de test HER2 IHC",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70709": {
+        "name": "Anticuerpo primario HER2 IHC",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70710": {
+        "name": "Tipo de test HER2 ISH",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "70711": {
+        "name": "Anticuerpo primario Ki-67",
+        "type": "coded",
+        "depth": 3,
+        "parent": "707",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8": {
+        "name": "Márgenes Quirúrgicos",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 4
+    },
+    "801": {
+        "name": "Márgenes Quirúrgicos (FALP)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "8",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "802": {
+        "name": "Margen Carcinoma Invasivo",
+        "type": "group",
+        "depth": 2,
+        "parent": "8",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 7
+    },
+    "80201": {
+        "name": "Estado margen invasivo",
+        "type": "coded",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80202": {
+        "name": "Calificador distancia margen invasivo",
+        "type": "coded",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80203": {
+        "name": "Distancia al margen más cercano (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80204": {
+        "name": "Margen(es) más cercano(s) al invasivo",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80205": {
+        "name": "Margen(es) comprometido(s) por invasivo",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80206": {
+        "name": "Extensión del compromiso del margen",
+        "type": "text",
+        "depth": 3,
+        "parent": "802",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80207": {
+        "name": "Distancias individuales por margen invasivo (mm)",
+        "type": "group",
+        "depth": 3,
+        "parent": "802",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "8020701": {
+        "name": "Distancia margen Anterior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8020702": {
+        "name": "Distancia margen Posterior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8020703": {
+        "name": "Distancia margen Superior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8020704": {
+        "name": "Distancia margen Inferior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8020705": {
+        "name": "Distancia margen Medial (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8020706": {
+        "name": "Distancia margen Lateral (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80207",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "803": {
+        "name": "Margen CDIS",
+        "type": "group",
+        "depth": 2,
+        "parent": "8",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "80301": {
+        "name": "Estado margen CDIS",
+        "type": "coded",
+        "depth": 3,
+        "parent": "803",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80302": {
+        "name": "Calificador distancia margen CDIS",
+        "type": "coded",
+        "depth": 3,
+        "parent": "803",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80303": {
+        "name": "Distancia CDIS al margen más cercano (mm)",
+        "type": "number",
+        "depth": 3,
+        "parent": "803",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80304": {
+        "name": "Margen(es) más cercano(s) al CDIS",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "803",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80305": {
+        "name": "Margen(es) comprometido(s) por CDIS",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "803",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80306": {
+        "name": "Distancias individuales por margen CDIS (mm)",
+        "type": "group",
+        "depth": 3,
+        "parent": "803",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "8030601": {
+        "name": "Distancia CDIS margen Anterior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8030602": {
+        "name": "Distancia CDIS margen Posterior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8030603": {
+        "name": "Distancia CDIS margen Superior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8030604": {
+        "name": "Distancia CDIS margen Inferior (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8030605": {
+        "name": "Distancia CDIS margen Medial (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "8030606": {
+        "name": "Distancia CDIS margen Lateral (mm)",
+        "type": "number",
+        "depth": 4,
+        "parent": "80306",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "804": {
+        "name": "Margen Filoide",
+        "type": "group",
+        "depth": 2,
+        "parent": "8",
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 4
+    },
+    "80401": {
+        "name": "Estado margen filoide",
+        "type": "coded",
+        "depth": 3,
+        "parent": "804",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80402": {
+        "name": "Margen(es) más cercano(s) al Tumor Filoides",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "804",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "8040201": {
+        "name": "Especificación Margen más cercano al tumor filoides (Otro / No se puede determinar)",
+        "type": "text",
+        "depth": 4,
+        "parent": "80402",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80403": {
+        "name": "Calificador de distancia",
+        "type": "coded",
+        "depth": 3,
+        "parent": "804",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "8040301": {
+        "name": "Valor del calificador de distancia",
+        "type": "number",
+        "depth": 4,
+        "parent": "80403",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "80404": {
+        "name": "Margen(es) envuelto(s) por el tumor filoide",
+        "type": "coded_multiple",
+        "depth": 3,
+        "parent": "804",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 1
+    },
+    "8040401": {
+        "name": "Especificación Margen envuelto por el tumor filoide",
+        "type": "text",
+        "depth": 4,
+        "parent": "80404",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "9": {
+        "name": "Ganglios Linfáticos Regionales",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 11
+    },
+    "901": {
+        "name": "Estado de los Ganglios",
+        "type": "coded",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "90101": {
+        "name": "Compromiso de Ganglios Linfáticos Regionales",
+        "type": "coded",
+        "depth": 3,
+        "parent": "901",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "90102": {
+        "name": "Especificación Compromiso Ganglios Linfáticos Regionales (Otro / No puede determinarse)",
+        "type": "text",
+        "depth": 3,
+        "parent": "901",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "902": {
+        "name": "Topografía de Ganglios Evaluados",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "903": {
+        "name": "N° ganglios con Macrometástasis (>2mm)",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "904": {
+        "name": "N° ganglios con Micrometástasis (>0.2mm a 2mm)",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "905": {
+        "name": "N° ganglios con Células Tumorales Aisladas (≤0.2mm o ≤200 células)",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "906": {
+        "name": "Número total de ganglios linfáticos positivos (macroscópicos y microscópicos) contabilizados para la categoría pN",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "907": {
+        "name": "Calificador tamaño depósito nodal",
+        "type": "coded",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "908": {
+        "name": "Tamaño mayor depósito nodal (mm)",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "909": {
+        "name": "Extensión Extranodal",
+        "type": "coded",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "910": {
+        "name": "Total ganglios examinados (centinela + no centinela)",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "911": {
+        "name": "Ganglios centinela examinados",
+        "type": "number",
+        "depth": 2,
+        "parent": "9",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "10": {
+        "name": "Metástasis a Distancia",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "1001": {
+        "name": "Sitios Distantes Comprometidos",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "10",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 2
+    },
+    "100101": {
+        "name": "Especificación Ganglio Linfático no Regional",
+        "type": "text",
+        "depth": 3,
+        "parent": "1001",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "100102": {
+        "name": "Especificación de Sitios Distantes Comprometidos (Otro / No puede determinarse)",
+        "type": "text",
+        "depth": 3,
+        "parent": "1001",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "11": {
+        "name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 6
+    },
+    "1101": {
+        "name": "Modificadores de Clasificación",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1102": {
+        "name": "Tumor Primario (pT)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1103": {
+        "name": "T Suffix",
+        "type": "coded",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1104": {
+        "name": "Ganglios Linfáticos Regionales (pN)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1105": {
+        "name": "N Suffix",
+        "type": "coded_multiple",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1106": {
+        "name": "Metástasis a Distancia (pM)",
+        "type": "coded",
+        "depth": 2,
+        "parent": "11",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "12": {
+        "name": "Hallazgos Adicionales y Comentarios",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 2
+    },
+    "1201": {
+        "name": "Hallazgos Adicionales",
+        "type": "text",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "1202": {
+        "name": "Comentarios",
+        "type": "text",
+        "depth": 2,
+        "parent": "12",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "13": {
+        "name": "Comportamiento",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "1301": {
+        "name": "Comportamiento",
+        "type": "coded",
+        "depth": 2,
+        "parent": "13",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    },
+    "14": {
+        "name": "Extensión diagnóstico",
+        "type": "section",
+        "depth": 1,
+        "parent": null,
+        "structural": true,
+        "annotatable": false,
+        "n_child_nodes": 1
+    },
+    "1401": {
+        "name": "Extensión diagnóstico",
+        "type": "coded",
+        "depth": 2,
+        "parent": "14",
+        "structural": false,
+        "annotatable": true,
+        "n_child_nodes": 0
+    }
+}

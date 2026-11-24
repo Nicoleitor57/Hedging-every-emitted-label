@@ -1,0 +1,20 @@
+{
+ "nombre": "rinon",
+ "corpus": "publico_rinon_rin1",
+ "exclude_vids": [
+  "801",
+  "901",
+  "1001",
+  "1101"
+ ],
+ "archivos": {
+  "tree_241": "tree_dict_hier_rinon.json",
+  "tree_206": "tree_dict_rinon.json",
+  "remap": "tree_dict_hier_rinon_remap.json",
+  "meta": "tree_dict_hier_rinon_meta.json",
+  "edge_types": "edge_types_rinon.json",
+  "adm_tree": "fallback_tree_rinon.json",
+  "derivation": "derivation_map_rinon.json",
+  "cooc": "multilabel_pairs_rinon.json"
+ }
+}

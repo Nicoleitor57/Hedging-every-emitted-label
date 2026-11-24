@@ -1,0 +1,5982 @@
+{
+ "summary": {
+  "root": "Reporte Patológico Mama - R2BO + CAP Unified",
+  "n_nodes": 245,
+  "n_edges": 231,
+  "by_population": {
+   "class": 43,
+   "structural": 188
+  },
+  "by_kind": {
+   "comment": 3,
+   "exact_value_of": 4,
+   "refinement": 5,
+   "specify_other": 31,
+   "container": 188
+  },
+  "by_verdict": {
+   "inadmissible": 38,
+   "undetermined": 193
+  },
+  "by_confidence": {
+   "high": 223,
+   "low": 5,
+   "medium": 3
+  },
+  "n_structural_parents": 35,
+  "specify_other_rule_paths": {
+   "name": 25,
+   "both": 6
+  }
+ },
+ "edges": [
+  {
+   "parent": "405",
+   "child": "40502",
+   "parent_name": "Grado Nuclear CDIS",
+   "child_name": "Comentario del grado nuclear CDIS",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "comment",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.4074,
+    "name_option_best": "Grado II (intermedio)"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "406",
+   "child": "40602",
+   "parent_name": "Necrosis CDIS",
+   "child_name": "Explicación 'No puede determinarse Necrosis CDIS'",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "comment",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.6,
+    "name_option_best": "No puede determinarse"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "408",
+   "child": "40803",
+   "parent_name": "Carcinoma Lobulillar In Situ (CLIS)",
+   "child_name": "Comentario CLIS",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "comment",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Carcinoma lobulillar in situ (especificar)",
+    "name_option_ratio": 0.4,
+    "name_option_best": "No identificado"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "505",
+   "child": "50501",
+   "parent_name": "Tasa Mitótica",
+   "child_name": "Número de mitosis por 10 campos de gran aumento",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "exact_value_of",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "number",
+    "parent_n_options": 4,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.8952,
+    "name_option_best": "Número específico de mitosis por 10 campos de gran aumento"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "505",
+   "child": "50502",
+   "parent_name": "Tasa Mitótica",
+   "child_name": "Número de mitosis por milímetro cuadrado",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "exact_value_of",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "number",
+    "parent_n_options": 4,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.8791,
+    "name_option_best": "Número específico de mitosis por milímetro cuadrado"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "40707",
+   "child": "4070701",
+   "parent_name": "Extensión del CDIS",
+   "child_name": "Especificar CDIS como % del tumor entero",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "exact_value_of",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "number",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3793,
+    "name_option_best": "Otro (especificar)"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80403",
+   "child": "8040301",
+   "parent_name": "Calificador de distancia",
+   "child_name": "Valor del calificador de distancia",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "exact_value_of",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "number",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro",
+    "name_option_ratio": 0.36,
+    "name_option_best": "Distancia exacta"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "301",
+   "child": "30101",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Patrón Morfológico Específico (para carcinoma invasivo de tipo no especial (ductal))",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "refinement",
+   "schema_verdict": "undetermined",
+   "schema_prior": null,
+   "confidence": "low",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 0.7176,
+    "name_option_best": "Carcinoma invasivo de tipo no especial (ductal)"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30102",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Patrón Variante (para carcinoma lobulillar invasivo)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "refinement",
+   "schema_verdict": "undetermined",
+   "schema_prior": null,
+   "confidence": "low",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 0.6444,
+    "name_option_best": "Carcinoma lobulillar invasivo, clásico"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "408",
+   "child": "40802",
+   "parent_name": "Carcinoma Lobulillar In Situ (CLIS)",
+   "child_name": "Extensión CLIS",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "refinement",
+   "schema_verdict": "undetermined",
+   "schema_prior": null,
+   "confidence": "low",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Carcinoma lobulillar in situ (especificar)",
+    "name_option_ratio": 0.35,
+    "name_option_best": "Hiperplasia ductal atípica"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "901",
+   "child": "90101",
+   "parent_name": "Estado de los Ganglios",
+   "child_name": "Compromiso de Ganglios Linfáticos Regionales",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "refinement",
+   "schema_verdict": "undetermined",
+   "schema_prior": null,
+   "confidence": "low",
+   "evidence": {
+    "child_type": "coded",
+    "parent_n_options": 2,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.7143,
+    "name_option_best": "Ganglios linfáticos regionales presentes"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "30401",
+   "child": "3040101",
+   "parent_name": "Focalidad",
+   "child_name": "Característica Multifocal",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "refinement",
+   "schema_verdict": "undetermined",
+   "schema_prior": null,
+   "confidence": "low",
+   "evidence": {
+    "child_type": "coded",
+    "parent_n_options": 4,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.5714,
+    "name_option_best": "Multifocal"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "201",
+   "child": "20101",
+   "parent_name": "Procedimiento",
+   "child_name": "Especificar otro procedimiento",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 7,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.4889,
+    "name_option_best": "No especificado",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30103",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Tipos Histológicos Mixtos (especificar tipos y porcentajes de cada uno)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 1.0,
+    "name_option_best": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30104",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Carcinoma Metaplásico Mixto (especificar tipos y porcentajes de cada uno)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 0.9863,
+    "name_option_best": "Carcinoma metaplásico mixto (especificar tipos y procentajes de cada uno)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30105",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Carcinoma Metaplásico Otro Tipo (especificar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 0.989,
+    "name_option_best": "Carcinoma metaplásico, otro tipo (especificar)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30106",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Carcinoma Invasivo con Características de (especificar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 1.0,
+    "name_option_best": "Carcinoma invasivo con características de (especificar)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "301",
+   "child": "30107",
+   "parent_name": "Tipo Histológico",
+   "child_name": "Otro Tipo Histológico No Listado (especificar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 31,
+    "parent_escape_option": "Tipos histológicos mixtos (especificar tipos y porcentajes de cada uno)",
+    "name_option_ratio": 1.0,
+    "name_option_best": "Otro tipo histológico no listado (especificar)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "305",
+   "child": "30501",
+   "parent_name": "Invasión Linfática",
+   "child_name": "Especificación del otro tipo de invasión linfática",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3235,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "306",
+   "child": "30601",
+   "parent_name": "Invasión Vascular",
+   "child_name": "Especificación del otro tipo de invasión vascular",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3284,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "307",
+   "child": "30701",
+   "parent_name": "Invasión Linfovascular",
+   "child_name": "Especificación del otro tipo de invasión linfovascular",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3056,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "308",
+   "child": "30801",
+   "parent_name": "Invasión Linfática Dérmica",
+   "child_name": "Especificación del otro tipo de invasión linfática dérmica",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.2895,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "309",
+   "child": "30901",
+   "parent_name": "Invasión Vascular Dérmica",
+   "child_name": "Especificación del otro tipo de invasión vascular dérmica",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.2933,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "310",
+   "child": "31001",
+   "parent_name": "Invasión Linfovascular Dérmica",
+   "child_name": "Especificación del otro tipo de invasión linfovascular dérmica",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.275,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "312",
+   "child": "31201",
+   "parent_name": "Microcalcificaciones",
+   "child_name": "Especificación del otro tipo de microcalcificación",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3235,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "402",
+   "child": "40201",
+   "parent_name": "Tipo Histológico CDIS",
+   "child_name": "Otro tipo histológico in situ (especificar)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro tipo histológico in situ (especificar)",
+    "name_option_ratio": 1.0,
+    "name_option_best": "Otro tipo histológico in situ (especificar)",
+    "rule_path": "both"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "404",
+   "child": "40401",
+   "parent_name": "Patrones Arquitectónicos CDIS",
+   "child_name": "Otro patrón arquitectónico (especificar)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 9,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.6207,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "405",
+   "child": "40501",
+   "parent_name": "Grado Nuclear CDIS",
+   "child_name": "Otro grado nuclear CDIS (especificar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.6545,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "406",
+   "child": "40601",
+   "parent_name": "Necrosis CDIS",
+   "child_name": "Otro tipo de Necrosis CDIS (especificar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.6207,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "408",
+   "child": "40801",
+   "parent_name": "Carcinoma Lobulillar In Situ (CLIS)",
+   "child_name": "Especificar otro tipo de CLIS",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Carcinoma lobulillar in situ (especificar)",
+    "name_option_ratio": 0.4681,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "507",
+   "child": "50701",
+   "parent_name": "Elementos heterólogos malignos",
+   "child_name": "Especificación Elemento heterólogo maligno (otro)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3582,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "601",
+   "child": "60101",
+   "parent_name": "Efecto en la Mama",
+   "child_name": "Especificación efecto en la mama (otro/no se puede determinar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 6,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.5238,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "901",
+   "child": "90102",
+   "parent_name": "Estado de los Ganglios",
+   "child_name": "Especificación Compromiso Ganglios Linfáticos Regionales (Otro / No puede determinarse)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "medium",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 2,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.5669,
+    "name_option_best": "Ganglios linfáticos regionales presentes",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "1001",
+   "child": "100101",
+   "parent_name": "Sitios Distantes Comprometidos",
+   "child_name": "Especificación Ganglio Linfático no Regional",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Ganglio linfático no regional (especificar si posible)",
+    "name_option_ratio": 0.5918,
+    "name_option_best": "Ganglio linfático no regional (especificar si posible)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "1001",
+   "child": "100102",
+   "parent_name": "Sitios Distantes Comprometidos",
+   "child_name": "Especificación de Sitios Distantes Comprometidos (Otro / No puede determinarse)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Ganglio linfático no regional (especificar si posible)",
+    "name_option_ratio": 0.42,
+    "name_option_best": "No puede determinarse",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "30401",
+   "child": "3040102",
+   "parent_name": "Focalidad",
+   "child_name": "Otra característica / No se puede determinar",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "medium",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 4,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.5846,
+    "name_option_best": "No puede determinarse",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "31102",
+   "child": "3110201",
+   "parent_name": "Estado pezón",
+   "child_name": "Especificación del estado del pezón (otro/no se puede determinar)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 7,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.5057,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "31103",
+   "child": "3110301",
+   "parent_name": "Invasión de piel (tipo)",
+   "child_name": "Especificación del tipo de invasión de piel (otro/no se puede determinar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 7,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.4632,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "31105",
+   "child": "3110501",
+   "parent_name": "Músculo esquelético (extensión)",
+   "child_name": "Especificación del tipo de invasión de músculo esquelético (otro/no se puede determinar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 6,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.5578,
+    "name_option_best": "Carcinoma invade músculo esquelético y pared torácica (T4a)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "40707",
+   "child": "4070702",
+   "parent_name": "Extensión del CDIS",
+   "child_name": "Especificar extensión del CDIS (otro/no se puede determinar)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 5,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.5366,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70501",
+   "child": "7050101",
+   "parent_name": "Resultado ISH",
+   "child_name": "Especificación resultado ISH (no se puede determinar)",
+   "parent_type": "coded",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "medium",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 3,
+    "parent_escape_option": null,
+    "name_option_ratio": 0.5867,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80402",
+   "child": "8040201",
+   "parent_name": "Margen(es) más cercano(s) al Tumor Filoides",
+   "child_name": "Especificación Margen más cercano al tumor filoides (Otro / No se puede determinar)",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.419,
+    "name_option_best": "No se puede determinar",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80404",
+   "child": "8040401",
+   "parent_name": "Margen(es) envuelto(s) por el tumor filoide",
+   "child_name": "Especificación Margen envuelto por el tumor filoide",
+   "parent_type": "coded_multiple",
+   "population": "class",
+   "kind": "specify_other",
+   "schema_verdict": "inadmissible",
+   "schema_prior": 0.0,
+   "confidence": "high",
+   "evidence": {
+    "child_type": "text",
+    "parent_n_options": 8,
+    "parent_escape_option": "Otro (especificar)",
+    "name_option_ratio": 0.3188,
+    "name_option_best": "Otro (especificar)",
+    "rule_path": "name"
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "1",
+   "child": "101",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Fecha del informe",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "102",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "ID Solicitud Origen",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "103",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "RUT Paciente",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "104",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "RUT Patólogo",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "105",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Institución de origen (DEIS)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "106",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Número de Biopsia",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "107",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Ficha",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "108",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Registro Clínico ID",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "109",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Nombre Paciente",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "1",
+   "child": "110",
+   "parent_name": "Metadatos del Informe",
+   "child_name": "Nombre Patólogo",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 10,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "date": 1,
+     "text": 8,
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "2",
+   "child": "201",
+   "parent_name": "Espécimen",
+   "child_name": "Procedimiento",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "2",
+   "child": "202",
+   "parent_name": "Espécimen",
+   "child_name": "Lateralidad del Espécimen",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "2",
+   "child": "203",
+   "parent_name": "Espécimen",
+   "child_name": "Sitio Tumoral (Localización Anatómica)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "301",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Tipo Histológico",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "302",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Grado Histológico (Nottingham)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "303",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Tamaño del Tumor",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "304",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Focalidad Tumoral",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "305",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Linfática",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "306",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Vascular",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "307",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Linfovascular",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "308",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Linfática Dérmica",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "309",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Vascular Dérmica",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "310",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Invasión Linfovascular Dérmica",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "311",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Extensión Tumoral",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "3",
+   "child": "312",
+   "parent_name": "Hallazgos Invasivos",
+   "child_name": "Microcalcificaciones",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5833,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 12,
+    "type_purity": 0.5833,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5833,
+    "types": {
+     "coded": 7,
+     "group": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "401",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Presencia CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "402",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Tipo Histológico CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "403",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Componente Intraductal Extenso (EIC)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "404",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Patrones Arquitectónicos CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "405",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Grado Nuclear CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "406",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Necrosis CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "407",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Tamaño/Extensión del CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "4",
+   "child": "408",
+   "parent_name": "Hallazgos In Situ (CDIS)",
+   "child_name": "Carcinoma Lobulillar In Situ (CLIS)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 8,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 3,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "501",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Tipo Histológico Filoides",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "502",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Celularidad Estromal",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "503",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Atipia Estromal",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "504",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Sobrecrecimiento estromal",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "505",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Tasa Mitótica",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "506",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Borde tumoral histológico",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "5",
+   "child": "507",
+   "parent_name": "Hallazgos Filoides",
+   "child_name": "Elementos heterólogos malignos",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 7
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "6",
+   "child": "601",
+   "parent_name": "Efectos del Tratamiento y RCB",
+   "child_name": "Efecto en la Mama",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "6",
+   "child": "602",
+   "parent_name": "Efectos del Tratamiento y RCB",
+   "child_name": "Efecto en los Ganglios",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "6",
+   "child": "603",
+   "parent_name": "Efectos del Tratamiento y RCB",
+   "child_name": "Parámetros RCB",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "group": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "701",
+   "parent_name": "Biomarcadores",
+   "child_name": "Espécimen/Bloque Testado",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "702",
+   "parent_name": "Biomarcadores",
+   "child_name": "Receptor Estrógeno (RE)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "703",
+   "parent_name": "Biomarcadores",
+   "child_name": "Receptor Progesterona (RP / PgR)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "704",
+   "parent_name": "Biomarcadores",
+   "child_name": "HER2 por Inmunohistoquímica (IHC)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "705",
+   "parent_name": "Biomarcadores",
+   "child_name": "HER2 por Hibridación In Situ (ISH)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "706",
+   "parent_name": "Biomarcadores",
+   "child_name": "Ki-67 Índice Proliferativo",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "7",
+   "child": "707",
+   "parent_name": "Biomarcadores",
+   "child_name": "Pre-análisis y Metodología",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8571,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.8571,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8571,
+    "types": {
+     "text": 1,
+     "group": 6
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "8",
+   "child": "801",
+   "parent_name": "Márgenes Quirúrgicos",
+   "child_name": "Márgenes Quirúrgicos (FALP)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.75,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.75,
+    "unit_purity": 1.0,
+    "homogeneity": 0.75,
+    "types": {
+     "coded": 1,
+     "group": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "8",
+   "child": "802",
+   "parent_name": "Márgenes Quirúrgicos",
+   "child_name": "Margen Carcinoma Invasivo",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.75,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.75,
+    "unit_purity": 1.0,
+    "homogeneity": 0.75,
+    "types": {
+     "coded": 1,
+     "group": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "8",
+   "child": "803",
+   "parent_name": "Márgenes Quirúrgicos",
+   "child_name": "Margen CDIS",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.75,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.75,
+    "unit_purity": 1.0,
+    "homogeneity": 0.75,
+    "types": {
+     "coded": 1,
+     "group": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "8",
+   "child": "804",
+   "parent_name": "Márgenes Quirúrgicos",
+   "child_name": "Margen Filoide",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.75,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.75,
+    "unit_purity": 1.0,
+    "homogeneity": 0.75,
+    "types": {
+     "coded": 1,
+     "group": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": false,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "901",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Estado de los Ganglios",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "902",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Topografía de Ganglios Evaluados",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "903",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "N° ganglios con Macrometástasis (>2mm)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "904",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "N° ganglios con Micrometástasis (>0.2mm a 2mm)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "905",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "N° ganglios con Células Tumorales Aisladas (≤0.2mm o ≤200 células)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "906",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Número total de ganglios linfáticos positivos (macroscópicos y microscópicos) contabilizados para la categoría pN",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "907",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Calificador tamaño depósito nodal",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "908",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Tamaño mayor depósito nodal (mm)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "909",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Extensión Extranodal",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "910",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Total ganglios examinados (centinela + no centinela)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "9",
+   "child": "911",
+   "parent_name": "Ganglios Linfáticos Regionales",
+   "child_name": "Ganglios centinela examinados",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6364,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.6364,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6364,
+    "types": {
+     "coded": 3,
+     "coded_multiple": 1,
+     "number": 7
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "10",
+   "child": "1001",
+   "parent_name": "Metástasis a Distancia",
+   "child_name": "Sitios Distantes Comprometidos",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 1,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1101",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "Modificadores de Clasificación",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1102",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "Tumor Primario (pT)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1103",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "T Suffix",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1104",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "Ganglios Linfáticos Regionales (pN)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1105",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "N Suffix",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "11",
+   "child": "1106",
+   "parent_name": "Estadificación Patológica pTNM (AJCC 8va Ed.)",
+   "child_name": "Metástasis a Distancia (pM)",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "coded": 4
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "12",
+   "child": "1201",
+   "parent_name": "Hallazgos Adicionales y Comentarios",
+   "child_name": "Hallazgos Adicionales",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "text": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "12",
+   "child": "1202",
+   "parent_name": "Hallazgos Adicionales y Comentarios",
+   "child_name": "Comentarios",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "text": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "13",
+   "child": "1301",
+   "parent_name": "Comportamiento",
+   "child_name": "Comportamiento",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 1,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "14",
+   "child": "1401",
+   "parent_name": "Extensión diagnóstico",
+   "child_name": "Extensión diagnóstico",
+   "parent_type": "section",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 1,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 2
+  },
+  {
+   "parent": "203",
+   "child": "20301",
+   "parent_name": "Sitio Tumoral (Localización Anatómica)",
+   "child_name": "Cuadrante",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "number": 1
+    },
+    "units": {
+     "cm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "203",
+   "child": "20302",
+   "parent_name": "Sitio Tumoral (Localización Anatómica)",
+   "child_name": "Posición Reloj",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "number": 1
+    },
+    "units": {
+     "cm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "203",
+   "child": "20303",
+   "parent_name": "Sitio Tumoral (Localización Anatómica)",
+   "child_name": "Distancia al pezón (cm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded_multiple": 2,
+     "number": 1
+    },
+    "units": {
+     "cm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "302",
+   "child": "30201",
+   "parent_name": "Grado Histológico (Nottingham)",
+   "child_name": "Aplicabilidad del Grado",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "302",
+   "child": "30202",
+   "parent_name": "Grado Histológico (Nottingham)",
+   "child_name": "Diferenciación Glandular/Tubular",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "302",
+   "child": "30203",
+   "parent_name": "Grado Histológico (Nottingham)",
+   "child_name": "Pleomorfismo Nuclear",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "302",
+   "child": "30204",
+   "parent_name": "Grado Histológico (Nottingham)",
+   "child_name": "Tasa Mitótica",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "302",
+   "child": "30205",
+   "parent_name": "Grado Histológico (Nottingham)",
+   "child_name": "Grado Total",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "coded": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30301",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Estado del tamaño",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30302",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Dimensión mayor del foco invasivo (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30303",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Calificador de distancia",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30304",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Segunda dimensión (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30305",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Tercera dimensión (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30306",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Dimensiones completas (texto exacto)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "303",
+   "child": "30307",
+   "parent_name": "Tamaño del Tumor",
+   "child_name": "Foco mayor en biopsia (solo espécimen biopsia)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4286,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.4286,
+    "unit_purity": 1.0,
+    "homogeneity": 0.4286,
+    "types": {
+     "coded": 2,
+     "number": 3,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 3
+    }
+   },
+   "child_annotatable": false,
+   "child_depth": 3
+  },
+  {
+   "parent": "304",
+   "child": "30401",
+   "parent_name": "Focalidad Tumoral",
+   "child_name": "Focalidad",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "text": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "304",
+   "child": "30402",
+   "parent_name": "Focalidad Tumoral",
+   "child_name": "Número de focos (calificador)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "text": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "304",
+   "child": "30403",
+   "parent_name": "Focalidad Tumoral",
+   "child_name": "Número de focos (valor)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "text": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "304",
+   "child": "30404",
+   "parent_name": "Focalidad Tumoral",
+   "child_name": "Tamaños focos individuales (mm, separados por ;)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "text": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "311",
+   "child": "31101",
+   "parent_name": "Extensión Tumoral",
+   "child_name": "Estado de extensión",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "311",
+   "child": "31102",
+   "parent_name": "Extensión Tumoral",
+   "child_name": "Estado pezón",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "311",
+   "child": "31103",
+   "parent_name": "Extensión Tumoral",
+   "child_name": "Invasión de piel (tipo)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "311",
+   "child": "31104",
+   "parent_name": "Extensión Tumoral",
+   "child_name": "Focos satélite de piel",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "311",
+   "child": "31105",
+   "parent_name": "Extensión Tumoral",
+   "child_name": "Músculo esquelético (extensión)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "coded_multiple": 1
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40701",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Estado tamaño CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40702",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Dimensión mayor estimada CDIS (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40703",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Segunda dimensión CDIS (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40704",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Dimensiones completas CDIS (texto)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40705",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Número de bloques con CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40706",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Número de bloques examinados",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "407",
+   "child": "40707",
+   "parent_name": "Tamaño/Extensión del CDIS",
+   "child_name": "Extensión del CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5714,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.5714,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5714,
+    "types": {
+     "coded": 1,
+     "number": 4,
+     "text": 1,
+     "coded_multiple": 1
+    },
+    "units": {
+     "mm": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60301",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Dimensión mayor lecho tumoral primario (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60302",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Segunda dimensión mayor (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60303",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Dimensiones completas lecho tumoral (texto)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60304",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Celularidad general del cáncer (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60305",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Porcentaje de cáncer In Situ (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60306",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Número de ganglios positivos",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60307",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Diámetro mayor metástasis nodal (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60308",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Score RCB numérico",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "603",
+   "child": "60309",
+   "parent_name": "Parámetros RCB",
+   "child_name": "Clase RCB",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.4667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 9,
+    "type_purity": 0.7778,
+    "unit_purity": 0.6,
+    "homogeneity": 0.4667,
+    "types": {
+     "number": 7,
+     "text": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 3,
+     "%": 2
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70201",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Estado RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70202",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Porcentaje células positivas RE (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70203",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Rango porcentaje RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70204",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Intensidad promedio de tinción RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70205",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Estado controles internos RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "702",
+   "child": "70206",
+   "parent_name": "Receptor Estrógeno (RE)",
+   "child_name": "Allred RE (proporción / intensidad / total)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 4,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": false,
+   "child_depth": 3
+  },
+  {
+   "parent": "703",
+   "child": "70301",
+   "parent_name": "Receptor Progesterona (RP / PgR)",
+   "child_name": "Estado RP",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "703",
+   "child": "70302",
+   "parent_name": "Receptor Progesterona (RP / PgR)",
+   "child_name": "Porcentaje células positivas RP (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "703",
+   "child": "70303",
+   "parent_name": "Receptor Progesterona (RP / PgR)",
+   "child_name": "Rango porcentaje RP",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "703",
+   "child": "70304",
+   "parent_name": "Receptor Progesterona (RP / PgR)",
+   "child_name": "Intensidad promedio de tinción RP",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "703",
+   "child": "70305",
+   "parent_name": "Receptor Progesterona (RP / PgR)",
+   "child_name": "Estado controles internos RP",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.8,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 5,
+    "type_purity": 0.8,
+    "unit_purity": 1.0,
+    "homogeneity": 0.8,
+    "types": {
+     "coded": 4,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "704",
+   "child": "70401",
+   "parent_name": "HER2 por Inmunohistoquímica (IHC)",
+   "child_name": "Score HER2 IHC",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "704",
+   "child": "70402",
+   "parent_name": "HER2 por Inmunohistoquímica (IHC)",
+   "child_name": "Patrón Score 0 (sub-categoría ultralow)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "704",
+   "child": "70403",
+   "parent_name": "HER2 por Inmunohistoquímica (IHC)",
+   "child_name": "Porcentaje células tinción completa intensa (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "704",
+   "child": "70404",
+   "parent_name": "HER2 por Inmunohistoquímica (IHC)",
+   "child_name": "Heterogeneidad clonal (clustered)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "group": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": false,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70501",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Resultado ISH",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70502",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Promedio señales HER2 por célula",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70503",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Promedio señales CEP17 por célula",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70504",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Ratio HER2/CEP17",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70505",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Número de observadores",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70506",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Número de células tumorales invasivas contadas",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "705",
+   "child": "70507",
+   "parent_name": "HER2 por Hibridación In Situ (ISH)",
+   "child_name": "Resultado FISH HER2",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.7143,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.7143,
+    "unit_purity": 1.0,
+    "homogeneity": 0.7143,
+    "types": {
+     "coded": 2,
+     "number": 5
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "706",
+   "child": "70601",
+   "parent_name": "Ki-67 Índice Proliferativo",
+   "child_name": "Ki-67 porcentaje exacto (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "number": 1,
+     "coded": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "706",
+   "child": "70602",
+   "parent_name": "Ki-67 Índice Proliferativo",
+   "child_name": "Ki-67 por rango",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "number": 1,
+     "coded": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70701",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tiempo isquemia fría",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70702",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tiempo isquemia fría (minutos)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70703",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tiempo de fijación (horas)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70704",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Fijador",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70705",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tipo de test RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70706",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Anticuerpo primario RE",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70707",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Anticuerpo primario RP",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70708",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tipo de test HER2 IHC",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70709",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Anticuerpo primario HER2 IHC",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70710",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Tipo de test HER2 ISH",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "707",
+   "child": "70711",
+   "parent_name": "Pre-análisis y Metodología",
+   "child_name": "Anticuerpo primario Ki-67",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3636,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 11,
+    "type_purity": 0.7273,
+    "unit_purity": 0.5,
+    "homogeneity": 0.3636,
+    "types": {
+     "coded": 8,
+     "number": 2,
+     "coded_multiple": 1
+    },
+    "units": {
+     "min": 1,
+     "h": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80201",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Estado margen invasivo",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80202",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Calificador distancia margen invasivo",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80203",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Distancia al margen más cercano (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80204",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Margen(es) más cercano(s) al invasivo",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80205",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Margen(es) comprometido(s) por invasivo",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80206",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Extensión del compromiso del margen",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "802",
+   "child": "80207",
+   "parent_name": "Margen Carcinoma Invasivo",
+   "child_name": "Distancias individuales por margen invasivo (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.2857,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 7,
+    "type_purity": 0.2857,
+    "unit_purity": 1.0,
+    "homogeneity": 0.2857,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "text": 1,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": false,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80301",
+   "parent_name": "Margen CDIS",
+   "child_name": "Estado margen CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80302",
+   "parent_name": "Margen CDIS",
+   "child_name": "Calificador distancia margen CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80303",
+   "parent_name": "Margen CDIS",
+   "child_name": "Distancia CDIS al margen más cercano (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80304",
+   "parent_name": "Margen CDIS",
+   "child_name": "Margen(es) más cercano(s) al CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80305",
+   "parent_name": "Margen CDIS",
+   "child_name": "Margen(es) comprometido(s) por CDIS",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "803",
+   "child": "80306",
+   "parent_name": "Margen CDIS",
+   "child_name": "Distancias individuales por margen CDIS (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.3333,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 0.3333,
+    "unit_purity": 1.0,
+    "homogeneity": 0.3333,
+    "types": {
+     "coded": 2,
+     "number": 1,
+     "coded_multiple": 2,
+     "group": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": false,
+   "child_depth": 3
+  },
+  {
+   "parent": "804",
+   "child": "80401",
+   "parent_name": "Margen Filoide",
+   "child_name": "Estado margen filoide",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "coded_multiple": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "804",
+   "child": "80402",
+   "parent_name": "Margen Filoide",
+   "child_name": "Margen(es) más cercano(s) al Tumor Filoides",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "coded_multiple": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "804",
+   "child": "80403",
+   "parent_name": "Margen Filoide",
+   "child_name": "Calificador de distancia",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "coded_multiple": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "804",
+   "child": "80404",
+   "parent_name": "Margen Filoide",
+   "child_name": "Margen(es) envuelto(s) por el tumor filoide",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 4,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "coded": 2,
+     "coded_multiple": 2
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 3
+  },
+  {
+   "parent": "30307",
+   "child": "3030701",
+   "parent_name": "Foco mayor en biopsia (solo espécimen biopsia)",
+   "child_name": "Tamaño foco mayor en biopsia (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "number": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "30307",
+   "child": "3030702",
+   "parent_name": "Foco mayor en biopsia (solo espécimen biopsia)",
+   "child_name": "Calificador",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.5,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 2,
+    "type_purity": 0.5,
+    "unit_purity": 1.0,
+    "homogeneity": 0.5,
+    "types": {
+     "number": 1,
+     "coded": 1
+    },
+    "units": {
+     "mm": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70206",
+   "child": "7020601",
+   "parent_name": "Allred RE (proporción / intensidad / total)",
+   "child_name": "Proporción Allred",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70206",
+   "child": "7020602",
+   "parent_name": "Allred RE (proporción / intensidad / total)",
+   "child_name": "Intensidad Allred",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70206",
+   "child": "7020603",
+   "parent_name": "Allred RE (proporción / intensidad / total)",
+   "child_name": "Total Allred",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 3
+    },
+    "units": {}
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70404",
+   "child": "7040401",
+   "parent_name": "Heterogeneidad clonal (clustered)",
+   "child_name": "Heterogeneidad clonal presente",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70404",
+   "child": "7040402",
+   "parent_name": "Heterogeneidad clonal (clustered)",
+   "child_name": "Porcentaje cáncer con tinción 3+ (%)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "70404",
+   "child": "7040403",
+   "parent_name": "Heterogeneidad clonal (clustered)",
+   "child_name": "Score en áreas no-3+",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 0.6667,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 3,
+    "type_purity": 0.6667,
+    "unit_purity": 1.0,
+    "homogeneity": 0.6667,
+    "types": {
+     "coded": 2,
+     "number": 1
+    },
+    "units": {
+     "%": 1
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020701",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Anterior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020702",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Posterior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020703",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Superior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020704",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Inferior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020705",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Medial (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80207",
+   "child": "8020706",
+   "parent_name": "Distancias individuales por margen invasivo (mm)",
+   "child_name": "Distancia margen Lateral (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030601",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Anterior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030602",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Posterior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030603",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Superior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030604",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Inferior (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030605",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Medial (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  },
+  {
+   "parent": "80306",
+   "child": "8030606",
+   "parent_name": "Distancias individuales por margen CDIS (mm)",
+   "child_name": "Distancia CDIS margen Lateral (mm)",
+   "parent_type": "group",
+   "population": "structural",
+   "kind": "container",
+   "schema_verdict": "undetermined",
+   "schema_prior": 1.0,
+   "confidence": "high",
+   "evidence": {
+    "n_children": 6,
+    "type_purity": 1.0,
+    "unit_purity": 1.0,
+    "homogeneity": 1.0,
+    "types": {
+     "number": 6
+    },
+    "units": {
+     "mm": 6
+    }
+   },
+   "child_annotatable": true,
+   "child_depth": 4
+  }
+ ]
+}

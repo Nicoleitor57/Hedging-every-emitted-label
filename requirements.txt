@@ -1,0 +1,10 @@
+# Linker, preparación de datos, decodificación, evaluación y validación (Python 3.10).
+# Versiones del entorno donde se desarrolló; los clústeres de las corridas pueden haber usado otras.
+torch==2.9.0
+transformers==5.12.1
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+tqdm==4.68.3
+matplotlib==3.10.9
+openpyxl==3.1.5        # validation/armar_base.py
