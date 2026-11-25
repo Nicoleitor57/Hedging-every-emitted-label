@@ -43,6 +43,9 @@ Corpus públicos en español: CANTEMIST, CodiEsp, Chilean Waiting List Corpus, e
 ([doi:10.5281/zenodo.5555431](https://doi.org/10.5281/zenodo.5555431); `falp` en el código) y TCGA-Reports traducido
 al español. Las tablas del artículo usan `pub1` (mama) y `rin1` (riñón); `spaces/` es el espacio de esas corridas.
 
+`datos_publicos_esann2027.zip` trae las notas con sus etiquetas débiles, los splits, los esquemas y el espacio de
+retroceso de mama `pub1`, mama `pub2` (réplica con un tercer etiquetador) y riñón `rin1`, con su `README.md` y `MD5SUMS.txt`.
+
 ## Cómo correrlo
 
 ```bash
